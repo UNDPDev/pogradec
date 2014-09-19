@@ -39,7 +39,7 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Lista e postimeve</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<style type="text/css">
 			.widget .panel-body { padding:0px; }
 			.widget .list-group { margin-bottom: 0; }

@@ -52,7 +52,7 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Lista e roleve</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		
 	</head>
 	<body>
