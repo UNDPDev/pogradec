@@ -1,5 +1,5 @@
 <?php
 echo "Ckemi cuna!";
-echo "sduket keq, po ky Denisi nga humbi thuaj??";
+echo "Paneli eshte te folderi /admin";
 
 ?>
