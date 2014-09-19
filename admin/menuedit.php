@@ -57,7 +57,7 @@
 		
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Menuja kryesore</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script>
 		function changelink(id)
@@ -202,7 +202,7 @@
 				</div>
 			</div>
 			
-			<script src="js/bootstrap.min.js"></script>
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 			<script src="js/holder.js"></script>
 		</body>
 	<html>				
