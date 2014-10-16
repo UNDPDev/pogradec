@@ -58,7 +58,7 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Menuja kryesore</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cosmo/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script>
 		function changelink(id)
@@ -94,11 +94,11 @@
 							<select class="form-control" name="posts" id="posts" onchange='changelink(this.value)'>
 								<option value='0' ></option>
 								<?php
-									include_once("../cls/cls_web_post.php");
-									$post = new web_post();
-									$posts = $post->Find("post_type='page' or post_type='post' order by title_al");
+									include_once("../cls/cls_web_service.php");
+									$post = new web_service();
+									$posts = $post->Find("id_status=1");
 									foreach($posts as $post){
-										echo "<option value='".$post->id_post."' >".get_excerpt($post->title_al,100)." (".$post->id_post.")</option>";
+										echo "<option value='".$post->id_service."' >".get_excerpt($post->service_name,100)." (".$post->id_service.")</option>";
 									}
 								?>
 							</select>

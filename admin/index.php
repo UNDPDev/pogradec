@@ -23,7 +23,7 @@
 		
 		if($r = mysql_fetch_array($res)){
 			
-				$_SESSION["user_id"]=$r["ID"];
+				$_SESSION["user_id"]=$r["id_user"];
 				$_SESSION["user_name"]=$r["user_login"];
 				$_SESSION["id_role"]=$r["id_role"];
 				
@@ -32,7 +32,7 @@
 					setcookie("user_name", $username, time() + 30 * 24 * 60 * 60 * 1000 , "/");
 				}
 				
-				header("Location:menuedit.php");
+				header("Location:settings.php");
 				die();
 			
 		}

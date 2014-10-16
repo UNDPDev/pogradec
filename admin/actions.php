@@ -50,9 +50,9 @@
 		<meta name="abstract" content="Best Company for Web Design" />
 		
 		<link rel="shortcut icon" href="favicon.ico" />
-		<title>Lista e roleve</title>
+		<title>Lista e te drejtave</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cosmo/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		
 	</head>
@@ -121,7 +121,7 @@
 									<?php for($i=0;$i<$j;$i++) echo "- ";?><?php echo $rights->action;?> 
 									</td>
 									<td class="col-md-4"><?php echo $rights->description;?></td>
-									<td class="col-md-2"><a href="actions.php?id=<?php echo $id;?>" class="">Modifiko</a>&nbsp;|&nbsp;<a href="actions.php?a=delete&id=<?php echo $id;?>" class="text-danger">Fshi</a></td>
+									<td class="col-md-2"><a href="actions.php?id=<?php echo $id;?>" type="button" class="btn btn-info btn-xs" ><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<a href="actions.php?a=delete&id=<?php echo $id;?>" type="button" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span></a></td>
 								</tr>
 								<?php	
 								

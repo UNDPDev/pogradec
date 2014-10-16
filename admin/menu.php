@@ -30,8 +30,8 @@
 							<?php if(checkAccess("Lexim-Faqe")){?><li><a href="pagelist.php">Lista e faqeve</a></li><?php }?>
 							<?php if(checkAccess("Edit-Faqe")){?><li><a href="pageedit.php">Faqe e re</a></li><?php }?>
 							<li class="divider"></li>
-							<?php if(checkAccess("Lexim-Postim")){?><li><a href="postlist.php">Lista e postimeve</a></li><?php }?>
-							<?php if(checkAccess("Edit-Postim")){?><li><a href="postedit.php">Postim i ri</a></li><?php }?>
+							<?php if(checkAccess("Lexim-Sherbim")){?><li><a href="../service.php">Lista e sherbimeve</a></li><?php }?>
+							<?php if(checkAccess("Edit-Sherbim")){?><li><a href="../service.php">Sherbim i ri</a></li><?php }?>
 							<li class="divider"></li>
 							<?php if(checkAccess("Lexim-Kategori")){?><li><a href="terms.php?t=category">Lista e kategorive</a></li><?php }?>
 							<li class="divider"></li>

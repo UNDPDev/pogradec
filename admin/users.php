@@ -18,12 +18,12 @@
 	if(isset($_REQUEST["id"])) $id = addslashes($_REQUEST["id"]);
 	
 	if($id){
-		$users = $users->get_by_id($id);
+		$users = $users->get_by_id_user($id);
 	}
 	
 	if($a=="delete"){
 		//if(!(checkAccess("Edit-Users"))) die("Not allowed <a href='index.php'>Login</a>");
-		//$users->user_status = 0;
+		//$users->id_status = 0;
 		//$users->Update();
 		$users->Delete();
 		header("Location:users.php");die();
@@ -34,13 +34,14 @@
 		if(isset($_POST["user_pass"]) && $_POST["user_pass"])$users->user_pass=sha1($_POST["user_pass"]);
 		$users->id_role=addslashes($_POST["id_role"]);
 		$users->user_email=addslashes($_POST["user_email"]);
-		$users->user_status=($_POST["user_status"]=="on"?1:0);
-		$users->display_name=addslashes($_POST["display_name"]);
+		$users->user_mobile=addslashes($_POST["user_mobile"]);
+		$users->id_status=($_POST["id_status"]=="on"?1:0);
+		$users->user_display_name=addslashes($_POST["user_display_name"]);
 		
 		
 		if($id==0){ //insert
 			$users = $users->Insert();
-			$id = $users->id;
+			$id = $users->id_user;
 			
 			if($_POST["send_mail"]=="on")
 			{
@@ -96,7 +97,7 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Lista e perdoruesve</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cosmo/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		
 	</head>
@@ -119,12 +120,16 @@
 							<input type="password" class="form-control" id="user_pass" name="user_pass"  value="">
 						</div>
 						<div class="form-group">
-							<label for="display_name">Emri</label>
-							<input type="text" class="form-control" id="display_name" name="display_name" placeholder="Emri" value="<?php echo $users->display_name;?>">
+							<label for="user_display_name">Emri</label>
+							<input type="text" class="form-control" id="user_display_name" name="user_display_name" placeholder="Emri" value="<?php echo $users->user_display_name;?>">
 						</div>
 						<div class="form-group">
 							<label for="user_email">Email</label>
 							<input type="email" class="form-control" id="user_email" name="user_email" placeholder="Emaili" value="<?php echo $users->user_email;?>">
+						</div>
+						<div class="form-group">
+							<label for="user_mobile">Mobile</label>
+							<input type="tel" class="form-control" id="user_mobile" name="user_mobile" placeholder="+355" value="<?php echo $users->user_mobile;?>">
 						</div>
 						<div class="form-group">
 							<label for="id_role">Roli</label>
@@ -145,7 +150,7 @@
 						<div class="form-group">							
 							<span class="button-checkbox">
 								<button type="button" class="btn" data-color="info" id="statusbtn">Statusi Aktiv</button>
-								<input type="checkbox" class="hidden" id="user_status" name="user_status" checked="<?php echo ($users->user_status?"checked":"");?>" />
+								<input type="checkbox" class="hidden" id="id_status" name="id_status" checked="<?php echo ($users->id_status?"checked":"");?>" />
 							</span>
 						</div>
 						<?php if(!$id) {?>
@@ -193,19 +198,21 @@
 						<!-- Table -->
 						<table class="table table-hover">
 							<?php
-								$user = $users->Find(" (user_login like '%".$q."%' or display_name like '%".$q."%' )  limit $s,20");
+								$user = $users->Find(" (user_login like '%".$q."%' or user_display_name like '%".$q."%' )  limit $s,20");
 								foreach($user as $users){
-									$id = $users->id;
+									$id = $users->id_user;
 									$role = $role->get_by_id_role($users->id_role);
 								?>
-								<tr class="<?php echo ($users->user_status?"":"danger");?>">
-									<td class="col-md-4">
+								<tr class="<?php echo ($users->id_status?"":"danger");?>">
+									<td class="col-md-2">
 									<label><input type="checkbox" id='chk_<?php echo $id;?>'></label>
 									<?php for($i=0;$i<$j;$i++) echo "- ";?><?php echo $users->user_login;?> 
 									</td>
-									<td class="col-md-3"><?php echo $users->display_name;?></td>
-									<td class="col-md-3"><?php echo $role->role;?></td>
-									<td class="col-md-2"><a href="users.php?id=<?php echo $id;?>" class="">Modifiko</a>&nbsp;|&nbsp;<a href="users.php?a=delete&id=<?php echo $id;?>" class="text-danger">Fshi</a></td>
+									<td class="col-md-2"><?php echo $users->user_display_name;?></td>
+									<td class="col-md-2"><?php echo $role->role;?></td>
+									<td class="col-md-2"><?php echo $users->user_mobile;?></td>
+									<td class="col-md-2"><?php echo $users->user_email;?></td>
+									<td class="col-md-2"><a href="users.php?id=<?php echo $id;?>" type="button" class="btn btn-info btn-xs" ><span class="glyphicon glyphicon-pencil"></span></a>&nbsp;&nbsp;<a href="users.php?a=delete&id=<?php echo $id;?>" type="button" class="btn btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span></a></td>
 								</tr>
 								<?php	
 								
