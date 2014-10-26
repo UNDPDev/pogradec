@@ -23,15 +23,21 @@
 					<li class="dropdown">
 						<a href="menuedit.php" class="">Menu</a>
 					</li>
+				<?php } if(checkAccess("SHERBIM")){?>
+					<li class="dropdown">
+						<a href="service-list.php" class="dropdown-toggle" data-toggle="dropdown">Sherbimet <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<?php if(checkAccess("Lexim-Sherbim")){?><li><a href="service-list.php">Lista e sherbimeve</a></li><?php }?>
+							<?php if(checkAccess("Edit-Sherbim")){?><li><a href="../service-edit.php">Sherbim i ri</a></li><?php }?>
+							<li class="divider"></li>
+						</ul>
+					</li>
 				<?php } if(checkAccess("POSTIM")){?>
 					<li class="dropdown">
 						<a href="postlist.php" class="dropdown-toggle" data-toggle="dropdown">Postim <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<?php if(checkAccess("Lexim-Faqe")){?><li><a href="pagelist.php">Lista e faqeve</a></li><?php }?>
 							<?php if(checkAccess("Edit-Faqe")){?><li><a href="pageedit.php">Faqe e re</a></li><?php }?>
-							<li class="divider"></li>
-							<?php if(checkAccess("Lexim-Sherbim")){?><li><a href="../service.php">Lista e sherbimeve</a></li><?php }?>
-							<?php if(checkAccess("Edit-Sherbim")){?><li><a href="../service.php">Sherbim i ri</a></li><?php }?>
 							<li class="divider"></li>
 							<?php if(checkAccess("Lexim-Kategori")){?><li><a href="terms.php?t=category">Lista e kategorive</a></li><?php }?>
 							<li class="divider"></li>
@@ -46,28 +52,6 @@
 						<ul class="dropdown-menu">
 							<li><a href="customlist.php?t=faq">Lista e FAQ</a></li>
 							<li><a href="customedit.php?t=faq">Pyetje e re </a></li>
-						</ul>
-					</li>
-				<?php } if(checkAccess("STAFF")){?>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Stafi <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<?php if(checkAccess("Lexim-Staff")){?><li><a href="customlist.php?t=staff">Lista e stafit</a></li><?php }?>
-							<?php if(checkAccess("Edit-Staff")){?><li><a href="customedit.php?t=staff">Staf i ri </a></li><?php }?>
-							<li class="divider"></li>
-							<?php if(checkAccess("Lexim-Lende")){?><li><a href="lectlist.php?t=lende">Lista e lendeve</a></li><?php }?>
-							<?php if(checkAccess("Lexim-Dokumenta")){?><li><a href="lectlist.php?t=doc">Lista e dokumentave</a></li><?php }?>
-						</ul>
-					</li>				
-				<?php } if(checkAccess("ANKETE")){?>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ankete <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<?php if(checkAccess("Lexim-Ankete")){?><li><a href="poll-list.php?t=poll">Lista e anketave</a></li><?php }?>
-							<?php if(checkAccess("Edit-Ankete")){?><li><a href="poll-edit.php?t=poll">Ankete e re </a></li><?php }?>
-							<li class="divider"></li>
-							<?php if(checkAccess("Lexim-Pyetesore")){?><li><a href="lectlist.php?t=lende">Lista e lendeve</a></li><?php }?>
-							<?php if(checkAccess("Lexim-Pyetesore")){?><li><a href="lectlist.php?t=doc">Lista e dokumentave</a></li><?php }?>
 						</ul>
 					</li>
 				<?php } if(checkAccess("MEDIA")){?>
