@@ -50,7 +50,7 @@
 		<meta name="copyright" content="www.dyqaniim.com 2013-2015" />
 		<meta name="keywords" content="" />
 		<meta name="robots" content="index, follow" />
-		<meta name="abstract" content="Projet per turizmin ne Pogradec" />
+		<meta name="abstract" content="Projekt per turizmin ne Pogradec" />
 		
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Lista e sherbimeve te kategorive</title>
