@@ -64,6 +64,33 @@ class web_category {
 		}
 		return $items;
 	}
+public function GetAll_sub() {
+		$SQL = "(SELECT id_category,id_category id_parent, category_name,category_desc,category_img,category_class,category_order,id_status
+FROM web_category
+where id_parent =0 or id_parent is null)
+union all
+(SELECT id_category,id_parent,
+ concat('---',category_name), category_desc,category_img,
+ category_class,category_order,id_status
+FROM web_category 
+where id_parent>0)
+order by 2,3 desc  ";
+		$result = mysql_query($SQL) or die("Error in SQL Syntax: $SQL," . mysql_error());
+
+		$items = array();$i=0;
+		while ($row = mysql_fetch_array($result)) {
+			$item = new web_category();
+			$item->id_category = $row['id_category'];
+			$item->category_name = $row['category_name'];
+			$item->category_desc = $row['category_desc'];
+			$item->category_img = $row['category_img'];
+			$item->category_class = $row['category_class'];
+			$item->category_order = $row['category_order'];
+			$item->id_status = $row['id_status'];
+			$items[$i++]=$item;
+		}
+		return $items;
+	}
 
 	/**
 	 * Find
