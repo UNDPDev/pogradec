@@ -17,12 +17,10 @@ include_once('db.php');
 class web_field_types {
 
 	public $field_type=null;
-<<<<<<< HEAD
-=======
+
 	public $field_label=null;
 	public $field_value=null;
 	public $field_query=null;
->>>>>>> origin/master
 
 	/**
 	 * Public Constructor
@@ -35,12 +33,10 @@ class web_field_types {
 
 		if ($row = mysql_fetch_array($result)) {
 			$this->field_type = $row['field_type'];
-<<<<<<< HEAD
-=======
+
 			$this->field_label = $row['field_label'];
 			$this->field_value = $row['field_value'];
 			$this->field_query = $row['field_query'];
->>>>>>> origin/master
 		}
 		return $this;
 	}
@@ -50,7 +46,7 @@ class web_field_types {
 	 *
 	 * @return Array() of web_field_types
 	 */
-	public function GetAll() {
+	public function GetAll($con) {
 		$SQL = "select * from `web_field_types` ";
 		$result = mysql_query($SQL) or die("Error in SQL Syntax: $SQL," . mysql_error());
 
@@ -58,12 +54,9 @@ class web_field_types {
 		while ($row = mysql_fetch_array($result)) {
 			$item = new web_field_types();
 			$item->field_type = $row['field_type'];
-<<<<<<< HEAD
-=======
-			$item->field_label = $row['field_label'];
-			$item->field_value = $row['field_value'];
-			$item->field_query = $row['field_query'];
->>>>>>> origin/master
+			//$item->field_label = $row['field_label'];
+			//$item->field_value = $row['field_value'];
+			//$item->field_query = $row['field_query'];
 			$items[$i++]=$item;
 		}
 		return $items;
@@ -82,27 +75,19 @@ class web_field_types {
 		while ($row = mysql_fetch_array($result)) {
 			$item = new web_field_types();
 			$item->field_type = $row['field_type'];
-<<<<<<< HEAD
-=======
 			$item->field_label = $row['field_label'];
 			$item->field_value = $row['field_value'];
 			$item->field_query = $row['field_query'];
->>>>>>> origin/master
 			$items[$i++]=$item;
 		}
 		return $items;
 	}
 
 	public function Insert() {
-<<<<<<< HEAD
-		$SQL = "insert into `web_field_types`) values(
-)";
-=======
 		$SQL = "insert into `web_field_types`(`field_label`,`field_value`,`field_query`) values(
 		'".mysql_real_escape_string($this->field_label)."'
 ,		'".mysql_real_escape_string($this->field_value)."'
 ,		'".mysql_real_escape_string($this->field_query)."')";
->>>>>>> origin/master
 		$result = mysql_query($SQL);
 		if ($result === false)
 			return null;
@@ -111,15 +96,11 @@ class web_field_types {
 	}
 
 	public function Update() {
-<<<<<<< HEAD
-		$SQL = "update `web_field_types` set 		where `field_type`='".mysql_real_escape_string($this->field_type)."' limit 1";
-=======
-		$SQL = "update `web_field_types` set 
+    	$SQL = "update `web_field_types` set
 		`field_label`='".mysql_real_escape_string($this->field_label)."'
 ,		`field_value`='".mysql_real_escape_string($this->field_value)."'
 ,		`field_query`='".mysql_real_escape_string($this->field_query)."'
 		where `field_type`='".mysql_real_escape_string($this->field_type)."' limit 1";
->>>>>>> origin/master
 		$result = mysql_query($SQL);
 		if ($result === false)
 			return null;

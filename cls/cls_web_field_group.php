@@ -36,7 +36,7 @@ class web_field_group {
 	 *
 	 * @return Array() of web_field_group
 	 */
-	public function GetAll() {
+	public function GetAll($con) {
 		$SQL = "select * from `web_field_group` ";
 		$result = mysql_query($SQL) or die("Error in SQL Syntax: $SQL," . mysql_error());
 

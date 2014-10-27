@@ -28,7 +28,7 @@
 						<a href="service-list.php" class="dropdown-toggle" data-toggle="dropdown">Sherbimet <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<?php if(checkAccess("Lexim-Sherbim")){?><li><a href="service-list.php">Lista e sherbimeve</a></li><?php }?>
-							<?php if(checkAccess("Edit-Sherbim")){?><li><a href="../service-edit.php">Sherbim i ri</a></li><?php }?>
+							<?php if(checkAccess("Edit-Sherbim")){?><li><a href="service-edit.php">Sherbim i ri</a></li><?php }?>
 							<li class="divider"></li>
 						</ul>
 					</li>
@@ -39,7 +39,7 @@
 							<?php if(checkAccess("Lexim-Faqe")){?><li><a href="pagelist.php">Lista e faqeve</a></li><?php }?>
 							<?php if(checkAccess("Edit-Faqe")){?><li><a href="pageedit.php">Faqe e re</a></li><?php }?>
 							<li class="divider"></li>
-							<?php if(checkAccess("Lexim-Kategori")){?><li><a href="terms.php?t=category">Lista e kategorive</a></li><?php }?>
+							<?php if(checkAccess("Lexim-Kategori")){?><li><a href="category.php">Lista e kategorive</a></li><?php }?>
 							<li class="divider"></li>
 							<?php if(checkAccess("Lexim-Tag")){?><li><a href="terms.php?t=tag">Lista e tag-eve</a></li><?php }?>
 							<li class="divider"></li>
