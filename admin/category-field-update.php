@@ -7,7 +7,7 @@
 	require_once("../cls/cls_web_field_group.php");
 	require_once("../cls/cls_web_field_types.php");
 	
-	$cat="0";
+	$id="0";
 	$arrfieldgroups = array();
 	$arrfieldtypes = array();
 	
@@ -16,10 +16,11 @@
 		$field = addslashes($_REQUEST["field"]);
 		$field_self = new web_category_fields();
 		$field_self->get_by_id_category_field($field);
+		$id = $field_self->id_category;
 		$field_groups = new web_field_group();
 		$arrfieldgroups = $field_groups->GetAll();
 		// Denisi
-		//$arrfields = $category_fields->get_by_id_category_field($cat);
+		//$arrfields = $category_fields->get_by_id_category_field($id);
 	}
 	if($_POST)
 	{
@@ -31,7 +32,7 @@
 		$kot->id_group=$_POST["id_group"];
 		$kot->Update();
 		/**********/
-		header("Location:category.php?cat=".$_POST["id_category"]);die();
+		header("Location:category-fields.php?id=".$_POST["id"]);die();
 	}
 	
 ?>
@@ -89,15 +90,15 @@
 								<br>
 								<div class="row">
 									<div class="col-md-1">
-										Pershkrimi:
+										Description:
 									</div>
 									<div class="col-md-4">
-										<input type="hidden" class="form-control" name="id_category" value="<?php echo $field_self->id_category?>">
+										<input type="hidden" class="form-control" name="id" value="<?php echo $field_self->id_category;?>">
 										<input type="hidden" class="form-control" name="id_category_field" value="<?php echo $field_self->id_category_field?>">
 										<input type="text" class="form-control" name="field_label" value="<?php echo $field_self->field_label?>">
 									</div>
 									<div class="col-md-1">
-										Lloji:
+										Group:
 									</div>
 									<div class="col-md-4">
 										<select class="form-control" name="id_group">
@@ -113,7 +114,7 @@
 										</select>
 									</div>
 									<div class="col-md-1">
-										Renditja:
+										Order:
 									</div>
 									<div class="col-md-1">
 										<input type="number" min="1" max="30" class="form-control" name="field_order" value="<?php echo $field_self->field_order?>">
@@ -125,10 +126,10 @@
 										<?php
 											if( $field != 0 )
 											{
-												echo  "<input type='submit' class='btn btn-success' value='Ruaj'/>";
+												echo  "<input type='submit' class='btn btn-success' value='Save'/>";
 											}
 										?>
-										<a href='category.php?cat=<?php echo $cat; ?>' class='btn btn-danger' role='button'>Anullo </a>
+										<a href='category-fields.php?id=<?php echo $id; ?>' class='btn btn-danger' role='button'>Anullo </a>
 									</div>
 								</div>
 							</div>
@@ -139,6 +140,5 @@
 		</div>
 		
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="js/holder.js"></script>
 	</body>
 <html>

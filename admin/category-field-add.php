@@ -7,32 +7,32 @@
 	require_once("../cls/cls_web_field_group.php");
 	require_once("../cls/cls_web_field_types.php");
 	
-	$cat="0";
+	$id="0";
 	$arrfieldgroups = array();
 	$arrfieldtypes = array();
 	
-	if(isset($_GET["cat"]))
+	if(isset($_GET["id"]))
 	{
-		$cat = addslashes($_REQUEST["cat"]);
+		$id = addslashes($_REQUEST["id"]);
 		$field_groups = new web_field_group();
 		$arrfieldgroups = $field_groups->GetAll();
 		$field_types = new web_field_types();
 		$arrfieldtypes = $field_types->GetAll();
 		// Denisi
-		//$arrfields = $category_fields->get_by_id_category_field($cat);
+		//$arrfields = $category_fields->get_by_id_category_field($id);
 	}
 	if($_POST)
 	{
 		$cat_field = new web_category_fields();
 		$cat_field->field_label=$_POST["field_label"];
-		$cat_field->id_category=$_POST["id_category"];
+		$cat_field->id_category=$_POST["id"];
 		$cat_field->field_name=$_POST["field_name"];
 		$cat_field->field_order=$_POST["field_order"];
 		$cat_field->id_group=$_POST["id_group"];
 		$cat_field->field_type=$_POST["field_type"];
 		$cat_field->Insert();
 		/**********/
-		header("Location:category.php?cat=".$_POST["id_category"]);die();
+		header("Location:category-fields.php?id=".$_POST["id_category"]);die();
 	}
 	
 ?>
@@ -93,7 +93,7 @@
 										Emri identifikues:
 									</div>
 									<div class="col-md-5">
-										<input type="hidden" name="id_category" value="<?php echo $cat; ?>"/>
+										<input type="hidden" name="id" value="<?php echo $id; ?>"/>
 										<input type="text" class="form-control" name="field_name">
 									</div>
 									<div class="col-md-1">
@@ -142,12 +142,12 @@
 								<div class="row">
 									<div class="col-md-6">
 										<?php
-											if( $cat != 0 )
+											if( $id != 0 )
 											{
 												echo  "<input type='submit' class='btn btn-success' value='Shto'/>";
 											}
 										?>
-										<a href='category.php?cat=<?php echo $cat; ?>' class='btn btn-danger' role='button'>Anullo </a>
+										<a href='category-fields.php?id=<?php echo $cat; ?>' class='btn btn-danger' role='button'>Anullo </a>
 									</div>
 								</div>
 							</div>

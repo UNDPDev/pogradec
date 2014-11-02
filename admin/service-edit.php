@@ -2,11 +2,18 @@
 	require_once("../start.php");
 	require_once("../config.php");
 	require_once("db.php");	
+	/* BESMIR ALIA
+	 * 02-11-2014
+	 * CHECK IF THE USER HAS ACCESS
+	 */
+	if(!checkAccess("Edit-Sherbim")){ header("Location:index.php");die(); }
+		
 	require_once("../cls/cls_web_service.php");
 	require_once("../cls/cls_web_service_fields.php");
 	require_once("../cls/cls_web_category.php");
 	require_once("../cls/cls_web_category_fields.php");
 	require_once("../cls/cls_web_field_group.php");
+	require_once("../cls/cls_web_status.php");
 	
 	$service = new web_service();
 	$service_field = new web_service_fields();
@@ -14,6 +21,7 @@
 	$category = new web_category();
 	$category_field = new web_category_fields();
 	$field_group = new web_field_group();
+	$status = new web_status();
 	$id=0;
 	if(isset($_REQUEST["id"])) $id = addslashes($_REQUEST["id"]);
 	$msg="";
@@ -41,15 +49,17 @@
 		$service->map_lng=addslashes($_REQUEST["map_lng"]);
 		$service->service_hours=addslashes($_REQUEST["service_hours"]);
 		//$service->service_img=addslashes($_REQUEST["service_img"]);
-		if($id==0)
-		{ //insert
+		//if($id==0)
+		//{ //insert
 			$service->dt_created=date("Y-m-d H:i:s");
-			$service->id_user=$_SESSION["id_user"];
-		}
+			$service->id_user=$_SESSION["user_id"];
+			$service->id_status=addslashes($_REQUEST["id_status"]);//Active
+		//}
 		if($id==0)
 		{ //insert
 			$service = $service->Insert();
 			$id = $service->id_service;
+			header("Location:service-extra.php?id=".$id);die(); //redirect to second step
 		}
 		else
 		{ //update
@@ -77,69 +87,23 @@
 		<meta name="abstract" content="Pogradeci online" />
 		
 		<link rel="shortcut icon" href="favicon.ico" />
-		<title>Modifikim Sherbimi</title>
+		<title>Service Details</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css"/>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/wizard.css" type="text/css"/>
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />-->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<!--http://maps.google.com/maps/api/js?sensor=false-->
 		<!--https://maps.googleapis.com/maps/api/js?v=3.exp-->
 		<style>
-			div#gmap { width: 100%; height: 300px; }
-			
-			.stepwizard-step p {
-			margin-top: 10px;    
-			}
-			
-			.stepwizard-row {
-			display: table-row;
-			}
-			
-			.stepwizard {
-			display: table;     
-			width: 100%;
-			position: relative;
-			}
-			
-			.stepwizard-step button[disabled] {
-			opacity: 1 !important;
-			filter: alpha(opacity=100) !important;
-			}
-			
-			.stepwizard-row:before {
-			top: 14px;
-			bottom: 0;
-			position: absolute;
-			content: " ";
-			width: 100%;
-			height: 1px;
-			background-color: #ccc;
-			z-order: 0;
-			
-			}
-			
-			.stepwizard-step {    
-			display: table-cell;
-			text-align: center;
-			position: relative;
-			}
-			
-			.btn-circle {
-			width: 30px;
-			height: 30px;
-			text-align: center;
-			padding: 6px 0;
-			font-size: 12px;
-			line-height: 1.428571429;
-			border-radius: 15px;
-			}
+			div#gmap { width: 100%; height: 250px; }
 		</style>
 		<script type="text/javascript">
 			$(function() {
 				var opts = {
-					zoom: 15,
+					zoom: 16,
 					center: new google.maps.LatLng(40.902667,20.659189), // Tirane
-					mapTypeId: google.maps.MapTypeId.ROADMAP
+					mapTypeId: google.maps.MapTypeId.SATELLITE
 				};
 				var map = new google.maps.Map(document.getElementById('gmap'), opts);	
 				var marker = new google.maps.Marker();
@@ -168,7 +132,7 @@
 					
 				};
 				<?php
-					if($id && $service->map_lat)
+					if($id && $service->map_lat != 0 && $service->map_lng != 0)
 					{	
 					?>
 					marker.setMap(null);
@@ -186,7 +150,9 @@
 						map: map,
 						title : "<?php echo $service->service_name;?>"
 					});
+					map.setCenter(marker.getPosition());
 					<?php
+					
 					}
 				?>
 			});
@@ -196,28 +162,24 @@
 		<?php include_once("menu.php");?>
 		<div class="container">
 			
-			<div class="stepwizard">
-				<div class="stepwizard-row">
-					<div class="stepwizard-step">
-						<button type="button" class="btn btn-primary btn-circle">1</button>
-						<p>Te dhenat baze</p>
+			
+			<div class="stepwizard"> 
+				<div class="stepwizard-row"> 
+					<div class="stepwizard-step"> <a class="btn btn-primary btn-circle" href='service-edit.php?id=<?php echo $id;?>'>1</a></button> 
+						<p>Basic Data</p>
 					</div>
-					<div class="stepwizard-step">
-						<button type="button" class="btn btn-default btn-circle" disabled="disabled">2</button>
-						<p>Sherbimet e ofruara</p>
+					<div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-extra.php?id=<?php echo $id;?>'>2</a> 
+						<p>Extra Info</p>
 					</div>
-					<div class="stepwizard-step">
-						<button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
-						<p>Informactione shtese</p>
-					</div> 
-					<div class="stepwizard-step">
-						<button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
-						<p>Galeria</p>
-					</div> 
-					<div class="stepwizard-step">
-						<button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
-						<p>Sherbimet e lidhura</p>
-					</div> 
+					<div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-subs.php?id=<?php echo $id;?>'>3</a> 
+						<p>Services</p>
+					</div>
+					<div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-gallery.php?id=<?php echo $id;?>'>4</a> 
+						<p>Gallery</p>
+					</div>
+					<div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-rel.php?id=<?php echo $id;?>'>5</a> 
+						<p>Related Services</p>
+					</div>
 				</div>
 			</div>
 			
@@ -231,17 +193,13 @@
 				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'.$msg.'</div>';}?>
 				<div class="row">
 					<div class="form-group col-md-12">
-						<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-save"></span> Ruaj</button>
-						<a href="service-edit.php" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> Krijo tjeter</a>
-						<a href="service-list.php" class="btn btn-info"><span class="glyphicon glyphicon-back"></span> Kthehu te lista</a>
-						<?php if($id) echo '<a href="../p.php?id='.$id.'" class="btn btn-default" target="_blank"><span class="glyphicon glyphicon-eye-open"></span> Shiko si duket</a>';?>
+						<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
+						<a href="service-edit.php" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> New</a>
+						<a href="service-list.php" class="btn btn-info"><span class="glyphicon glyphicon-list"></span> View List</a>
+						<?php if($id) echo '<a href="../service.php?id='.$id.'" class="btn btn-default" target="_blank"><span class="glyphicon glyphicon-eye-open"></span> Preview</a>';?>
 					</div>
 				</div>
 				<div class="row">
-					<div class="form-group col-md-9">
-						<label for="service_name">Emri i sherbimit</label>
-						<input type="text" class="form-control" id="service_name" name="service_name" placeholder="Emri i sherbimit" value="<?php echo $service->service_name;?>">
-					</div>
 					<div class="form-group col-md-3">
 						<label for="id_category">Kategoria</label>
 						<select class="form-control" id="id_category" name="id_category" >
@@ -256,22 +214,8 @@
 								}
 							?>
 						</select>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="service_desc">Pershkrim</label>
-						<textarea class="form-control ckeditor" id="service_desc" name="service_desc" rows="4" ><?php echo $service->service_desc;?></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-9">
-						<!--Google Map -->
-						<div id="gmap" class="col-md-12">
-							
-						</div>
-					</div>
-					<div class="form-group col-md-3">
+						<label for="service_name">Emri i sherbimit</label>
+						<input type="text" class="form-control" id="service_name" name="service_name" placeholder="Emri i sherbimit" value="<?php echo $service->service_name;?>">
 						<label for="service_address">Adresa</label>
 						<input type="text" class="form-control" id="service_address" name="service_address" placeholder="Adresa" value="<?php echo $service->service_address;?>">
 						<label for="service_mobile">Telefon</label>
@@ -282,54 +226,32 @@
 						<input type="text" class="form-control" id="service_nipt" name="service_nipt" placeholder="NIPT/ID" value="<?php echo $service->service_nipt;?>">
 						<label for="service_hours">Orari</label>
 						<input type="text" class="form-control" id="service_hours" name="service_hours" placeholder="24H" value="<?php echo $service->service_hours;?>">
+						
+						<label for="id_status">Statusi</label>
+						<select name="id_status" id="id_status" class="form-control">
+						<?php
+						$statuses = $status->GetAll();
+						foreach($statuses as $st)
+						{
+							$selected ="";
+									
+							if($st->id_status == $service->id_status) 
+							$selected = ' selected="selected"';
+							echo "<option value='".$st->id_status."' ".$selected .">".$st->status_name."</option>";
+						}
+						?>
+						</select>
+					</div>
+					<div class="form-group col-md-9">
+						<label for="service_desc">Pershkrim</label>
+						<textarea class="form-control ckeditor" id="service_desc" name="service_desc" rows="2" ><?php echo $service->service_desc;?></textarea>
+						<!--Google Map -->
+						<div id="gmap" class="col-md-12">
+							
+						</div>
 					</div>
 				</div>
-				<!--
-					<div class="row">
-					<div class="form-group col-md-9">
-					
-					<label for="img">Imazhi Kryesor</label>
-					<a href="upload.php" data-toggle="modal" data-target="#galery"><img data-src="<?php echo get_image_url($service->service_img);?>" src="<?php echo get_image_url($service->service_img);?>" id="img" class="img-rounded" width="250px" alt="Featured Image"></a>
-					<input type="text" class="form-control" id="service_img" name="service_img" placeholder="Path" value='<?php echo $service->service_img;?>' onchange="$('#img').attr('src',this.value);"><input type="file" name="img-upload" />
-					</div>
-					<div class="form-group col-md-3">
-					
-					<?php
-						$groups = $field_group->Find("id_group in (select distinct id_group from `web_category_fields` where id_category='".$service->id_category."')");
-						foreach($groups as $field_group){
-							echo "<h4>".$field_group->group_name."</h4>";
-							$fields = $category_field->Find("id_category='".$service->id_category."' and id_group='".$field_group->id_group."' order by field_order");
-							foreach($fields as $field){
-								switch($field->field_type){
-									case "textbox":case "numberbox":case "datepicker": case "timepicker": {
-										echo "<input type='text' class='form-control ".$field->field_type."' name='".$field->field_name."' id='".$field->field_name."' value='".$field->field_value."' placeholder='".$field->field_label."'/>";
-										break;
-									}
-									case "file": case "image": {
-										echo "<input type='file' class='form-control ".$field->field_type."' name='".$field->field_name."' id='".$field->field_name."' />";
-										break;
-									}
-									case "combobox":{
-										echo "<select class='form-control ".$field->field_type."' name='".$field->field_name."' id='".$field->field_name."' >";
-										if($field->field_query) {
-											$res = mysql_query($field->field_query) or die(mysql_error());
-											while($r = mysql_fetch_array($res))
-											{
-												echo "<option value='".$r[$field->field_value]."'>".$r[$field->field_label]."</option>";
-												
-											}
-										}
-										echo "</select>";
-										break;
-									}
-									
-								}
-							}
-						}
-					?>
-					</div>
-					</div>
-				-->
+				
 			</form>
 		</div>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

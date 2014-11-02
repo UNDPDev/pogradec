@@ -37,7 +37,7 @@ class web_category {
 			$this->category_class = $row['category_class'];
 			$this->category_order = $row['category_order'];
 			$this->id_status = $row['id_status'];
-			$item->id_parent = $row['id_parent'];
+			$this->id_parent = $row['id_parent'];
 		}
 		return $this;
 	}

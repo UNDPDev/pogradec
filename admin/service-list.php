@@ -2,6 +2,11 @@
 	require_once("../start.php");
 	require_once("../config.php");
 	require_once("db.php");
+	/* BESMIR ALIA
+	 * 02-11-2014
+	 * CHECK IF THE USER HAS ACCESS
+	 */
+	 if(!checkAccess("Lexim-Sherbim")){ header("Location:index.php");die(); }
 	require_once("../cls/cls_web_service.php");
 	require_once("../cls/cls_web_category.php");
 	
@@ -111,7 +116,7 @@
 					<div class="panel-body">
 						<ul class="list-group">
 							<?php
-								$posts = $service->Find(" (id_category ='".$c."' or '0'='".$c."') and (service_name like '%".$q."%' or service_desc like '%".$q."%') order by id_service desc limit ".($s*20).",20");
+								$posts = $service->Find(" (id_category ='".$c."' or '0'='".$c."') and (service_name like '%".$q."%' or service_desc like '%".$q."%') and id_parent=0 order by id_service desc limit ".($s*20).",20");
 								foreach($posts as $service){
 									$id = $service->id_service;
 									$img = $service->service_img;
