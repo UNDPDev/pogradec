@@ -104,9 +104,12 @@
 			switch($field->field_type)
 			{
 				case "textbox":case "numberbox":case "datepicker": case "timepicker": case "combobox": case "file": case "image":{
-					$category_field_value->field_value=$_REQUEST[$serv->id_category."".$field->field_name];
-					break;
-				}
+																		if(isset($_REQUEST[$subservice."".$field->field_name])) //or isset($_REQUEST[$serv->id_category."".$field->field_name]))
+                                                                              $category_field_value->field_value=$_REQUEST[$subservice."".$field->field_name];
+																	    else 
+																		      $category_field_value->field_value=$_REQUEST[$serv->id_category."".$field->field_name];
+																		 break;
+                                                                        }
 				case "checkbox": {
 					$category_field_value->field_value=0;
 					if(isset($_REQUEST[$subservice."".$field->field_name]) or isset($_REQUEST[$serv->id_category."".$field->field_name]))
@@ -254,30 +257,26 @@
 		?>
 		<div class="container">
 			
-			<div class="stepwizard">
-				<div class="stepwizard-row">
-					<div class="stepwizard-step">
-						<a class="btn btn-primary btn-circle" href='service-edit.php?id=<?php echo $id;?>'>1</a>
-						<p>Te dhenat baze</p>
-					</div>
-					<div class="stepwizard-step">
-						<a class="btn btn-primary btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-subs.php?id=<?php echo $id;?>'>2</a>
-						<p>Sherbimet e ofruara</p>
-					</div>
-					<div class="stepwizard-step">
-						<a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-extra.php?id=<?php echo $id;?>'>3</a>
-						<p>Informactione shtese</p>
-					</div> 
-					<div class="stepwizard-step">
-						<a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-gallery.php?id=<?php echo $id;?>'>4</a>
-						<p>Galeria</p>
-					</div> 
-					<div class="stepwizard-step">
-						<a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-rel.php?id=<?php echo $id;?>'>5</a>
-						<p>Sherbimet e lidhura</p>
-					</div> 
-				</div>
-			</div>
+			
+  <div class="stepwizard"> 
+    <div class="stepwizard-row"> 
+      <div class="stepwizard-step"> <a class="btn btn-primary btn-circle" href='service-edit.php?id=<?php echo $id;?>'>1</a> 
+        <p>Te dhenat baze</p>
+      </div>
+      <div class="stepwizard-step"> <a class="btn btn-primary btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-subs.php?id=<?php echo $id;?>'>2</a> 
+        <p>Sherbimet e ofruara</p>
+      </div>
+      <div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-extra.php?id=<?php echo $id;?>'>3</a> 
+        <p>Informactione shtese</p>
+      </div>
+      <div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-gallery.php?id=<?php echo $id;?>'>4</a> 
+        <p>Galeria</p>
+      </div>
+      <div class="stepwizard-step"> <a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-rel.php?id=<?php echo $id;?>'>5</a> 
+        <p>Sherbimet e lidhura</p>
+      </div>
+    </div>
+  </div>
 			
 		</div>
 		<div id="main" class="container">
