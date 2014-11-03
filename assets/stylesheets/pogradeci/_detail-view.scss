@@ -1,0 +1,123 @@
+.detail-view{
+
+	.item-primary{
+		.item-details{
+			background: #fff; padding: 10px 30px 20px;
+			@include box-shadow(1px, 0px, 5px, rgba(0,0,0,.4)); 
+			
+			.item-abstract{
+				font-size: em(18px, $font-size-base);
+			}
+
+			.services{
+				.row{
+					margin-bottom: 15px;
+				}
+			}
+
+			.services-extra{
+
+			}
+
+			@include min-screen($screen-sm-min) {
+				padding-bottom: 80px; height: 600px;
+			}
+		}
+
+		.item-location{
+			min-height: 100px; position: relative;
+			.item-map{
+				height: 400px;
+				@include make-row();
+				@include min-screen($screen-sm-min) {
+					height: 100%;
+				}
+			}
+			.contact-details{
+				bottom: $grid-gutter-width; z-index: 100;
+				width: 100%;
+				
+				.contact-details-inner{
+					background: #fff;
+					@include min-screen($screen-sm-min) {
+						float: right; right: $grid-gutter-width; @include box-shadow(0px, 0px, 5px, rgba(0,0,0,.4));
+					}
+				}
+
+				dl{
+					@include min-screen($screen-sm-min) {
+						font-size: 0.9em;
+					}
+				}
+
+				dt{
+					float: left; width: 62px; clear: left; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+					@include min-screen($screen-sm-min) {
+						width: 62px;
+					}
+				}
+				dd{
+						margin-left: 75px;
+					@include min-screen($screen-sm-min) {
+					}
+				}
+				@include min-screen($screen-sm-min) {
+					position: absolute; 
+				}
+			}
+			@include min-screen($screen-sm-min) {
+				height: 600px; padding-top: 60px; 
+			}
+		}
+
+		position: relative;
+		@include min-screen($screen-sm-min) {
+			
+		}
+	}
+
+	.item-extra{
+		background: #fff;
+		/*@include box-shadow(1px, 0px, 5px, rgba(0,0,0,.4));*/
+		clear: both; position: relative;
+		@include min-screen($screen-sm-min) {
+			margin-top: -80px;
+		}
+
+		.nav-tabs{
+			padding-top: 10px; overflow: hidden;
+			border-bottom: none; background: #fff;
+			@include min-screen($screen-sm-min) {
+				margin-top: -80px; width: 66.66667%;
+			}
+
+			li{
+				overflow: hidden;
+				&.active{
+					@include box-shadow(0px, 0px, 5px, rgba(0,0,0,.4));
+
+					a{
+						background: #fff !important;
+					}
+				}
+
+				a{
+					padding: 0px 30px 10px; margin-bottom: -5px; margin-right: 0; border: none;
+					&:hover{
+						background: none;
+					}
+				}
+			}
+		}
+
+		.tab-content{
+			min-height: 100px; padding: 30px 30px 15px;
+			@include box-shadow(-1px, 0px, 5px, rgba(0,0,0,.4));
+			background: #fff;
+		}
+	}
+
+	@include min-screen($screen-sm-min) {
+		margin-top:-60px; margin-left: -15px;
+	}
+}	

@@ -1,0 +1,2112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json pogradec@0.0.1 No description
+6 warn package.json pogradec@0.0.1 No repository field.
+7 warn package.json pogradec@0.0.1 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ 'D:\\wamp\\www\\pogradec',
+9 verbose install   [ 'grunt', 'grunt-contrib-watch', 'grunt-sass' ] ]
+10 info preinstall pogradec@0.0.1
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping grunt@0.4.5 D:\wamp\www\pogradec
+13 verbose already installed skipping grunt-contrib-watch@~0.6.1 D:\wamp\www\pogradec
+14 verbose cache add [ 'grunt-sass@^0.16.0', null ]
+15 verbose cache add name=undefined spec="grunt-sass@^0.16.0" args=["grunt-sass@^0.16.0",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'grunt-sass@^0.16.0',
+16 verbose parsed url   path: 'grunt-sass@^0.16.0',
+16 verbose parsed url   href: 'grunt-sass@^0.16.0' }
+17 verbose cache add name="grunt-sass" spec="^0.16.0" args=["grunt-sass","^0.16.0"]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: '^0.16.0',
+18 verbose parsed url   path: '^0.16.0',
+18 verbose parsed url   href: '^0.16.0' }
+19 verbose addNamed [ 'grunt-sass', '^0.16.0' ]
+20 verbose addNamed [ null, '>=0.16.0-0 <0.17.0-0' ]
+21 silly lockFile 40c67c17-grunt-sass-0-16-0 grunt-sass@^0.16.0
+22 verbose lock grunt-sass@^0.16.0 C:\Users\admin\AppData\Roaming\npm-cache\40c67c17-grunt-sass-0-16-0.lock
+23 silly addNameRange { name: 'grunt-sass',
+23 silly addNameRange   range: '>=0.16.0-0 <0.17.0-0',
+23 silly addNameRange   hasData: false }
+24 verbose url raw grunt-sass
+25 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-sass' ]
+26 verbose url resolved https://registry.npmjs.org/grunt-sass
+27 info trying registry request attempt 1 at 01:14:25
+28 verbose etag "4YJDIBKGGJF4YTPINZSS7148G"
+29 http GET https://registry.npmjs.org/grunt-sass
+30 http 304 https://registry.npmjs.org/grunt-sass
+31 silly registry.get cb [ 304,
+31 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:27 GMT',
+31 silly registry.get     server: 'Apache',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:27 GMT',
+31 silly registry.get     'cache-control': 'max-age=60',
+31 silly registry.get     etag: '"4YJDIBKGGJF4YTPINZSS7148G"',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-fra1241-FRA',
+31 silly registry.get     'x-cache': 'HIT',
+31 silly registry.get     'x-cache-hits': '1',
+31 silly registry.get     'x-timer': 'S1413933267.803188,VS0,VE105',
+31 silly registry.get     vary: 'Accept',
+31 silly registry.get     'content-length': '0',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 verbose etag grunt-sass from cache
+33 silly addNameRange number 2 { name: 'grunt-sass',
+33 silly addNameRange   range: '>=0.16.0-0 <0.17.0-0',
+33 silly addNameRange   hasData: true }
+34 silly addNameRange versions [ 'grunt-sass',
+34 silly addNameRange   [ '0.1.0',
+34 silly addNameRange     '0.2.1',
+34 silly addNameRange     '0.2.2',
+34 silly addNameRange     '0.2.3',
+34 silly addNameRange     '0.2.4',
+34 silly addNameRange     '0.2.5',
+34 silly addNameRange     '0.3.0',
+34 silly addNameRange     '0.4.0',
+34 silly addNameRange     '0.4.1',
+34 silly addNameRange     '0.5.0',
+34 silly addNameRange     '0.6.0',
+34 silly addNameRange     '0.6.1',
+34 silly addNameRange     '0.7.0',
+34 silly addNameRange     '0.8.0',
+34 silly addNameRange     '0.8.1',
+34 silly addNameRange     '0.9.0',
+34 silly addNameRange     '0.10.0',
+34 silly addNameRange     '0.11.0',
+34 silly addNameRange     '0.12.0',
+34 silly addNameRange     '0.12.1',
+34 silly addNameRange     '0.13.0',
+34 silly addNameRange     '0.13.1',
+34 silly addNameRange     '0.14.0',
+34 silly addNameRange     '0.14.1',
+34 silly addNameRange     '0.14.2',
+34 silly addNameRange     '0.15.0',
+34 silly addNameRange     '0.16.0' ] ]
+35 verbose addNamed [ 'grunt-sass', '0.16.0' ]
+36 verbose addNamed [ '0.16.0', '0.16.0' ]
+37 silly lockFile cdda827d-grunt-sass-0-16-0 grunt-sass@0.16.0
+38 verbose lock grunt-sass@0.16.0 C:\Users\admin\AppData\Roaming\npm-cache\cdda827d-grunt-sass-0-16-0.lock
+39 silly lockFile cdda827d-grunt-sass-0-16-0 grunt-sass@0.16.0
+40 silly lockFile cdda827d-grunt-sass-0-16-0 grunt-sass@0.16.0
+41 silly lockFile 40c67c17-grunt-sass-0-16-0 grunt-sass@^0.16.0
+42 silly lockFile 40c67c17-grunt-sass-0-16-0 grunt-sass@^0.16.0
+43 silly resolved [ { name: 'grunt-sass',
+43 silly resolved     version: '0.16.0',
+43 silly resolved     description: 'Compile Sass to CSS using node-sass',
+43 silly resolved     license: 'MIT',
+43 silly resolved     repository:
+43 silly resolved      { type: 'git',
+43 silly resolved        url: 'https://github.com/sindresorhus/grunt-sass' },
+43 silly resolved     author:
+43 silly resolved      { name: 'Sindre Sorhus',
+43 silly resolved        email: 'sindresorhus@gmail.com',
+43 silly resolved        url: 'http://sindresorhus.com' },
+43 silly resolved     engines: { node: '>=0.10.0' },
+43 silly resolved     scripts: { test: 'grunt' },
+43 silly resolved     files: [ 'tasks' ],
+43 silly resolved     keywords:
+43 silly resolved      [ 'gruntplugin',
+43 silly resolved        'css',
+43 silly resolved        'sass',
+43 silly resolved        'scss',
+43 silly resolved        'style',
+43 silly resolved        'compile',
+43 silly resolved        'preprocess',
+43 silly resolved        'compile',
+43 silly resolved        'libsass' ],
+43 silly resolved     dependencies:
+43 silly resolved      { chalk: '^0.5.1',
+43 silly resolved        'each-async': '^1.0.0',
+43 silly resolved        'node-sass': '^1.0.0',
+43 silly resolved        'object-assign': '^1.0.0' },
+43 silly resolved     devDependencies:
+43 silly resolved      { grunt: '^0.4.5',
+43 silly resolved        'grunt-contrib-clean': '^0.6.0',
+43 silly resolved        'grunt-contrib-nodeunit': '^0.4.1' },
+43 silly resolved     gitHead: 'cf858f0c3797b6f2f666bc058cd0151ee541b832',
+43 silly resolved     bugs: { url: 'https://github.com/sindresorhus/grunt-sass/issues' },
+43 silly resolved     homepage: 'https://github.com/sindresorhus/grunt-sass',
+43 silly resolved     _id: 'grunt-sass@0.16.0',
+43 silly resolved     _shasum: 'f9152ef2980af722be019e0054809dedd91691f8',
+43 silly resolved     _from: 'grunt-sass@^0.16.0',
+43 silly resolved     _npmVersion: '2.1.2',
+43 silly resolved     _nodeVersion: '0.10.32',
+43 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+43 silly resolved     maintainers: [ [Object] ],
+43 silly resolved     dist:
+43 silly resolved      { shasum: 'f9152ef2980af722be019e0054809dedd91691f8',
+43 silly resolved        tarball: 'http://registry.npmjs.org/grunt-sass/-/grunt-sass-0.16.0.tgz' },
+43 silly resolved     directories: {},
+43 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-sass/-/grunt-sass-0.16.0.tgz',
+43 silly resolved     readme: 'ERROR: No README data found!' } ]
+44 info install grunt-sass@0.16.0 into D:\wamp\www\pogradec
+45 info installOne grunt-sass@0.16.0
+46 info D:\wamp\www\pogradec\node_modules\grunt-sass unbuild
+47 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\grunt-sass\0.16.0\package.tgz
+48 silly lockFile fa4a5cca-pogradec-node-modules-grunt-sass tar://D:\wamp\www\pogradec\node_modules\grunt-sass
+49 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass C:\Users\admin\AppData\Roaming\npm-cache\fa4a5cca-pogradec-node-modules-grunt-sass.lock
+50 silly lockFile 4b5289ab-he-grunt-sass-0-16-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\grunt-sass\0.16.0\package.tgz
+51 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\grunt-sass\0.16.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\4b5289ab-he-grunt-sass-0-16-0-package-tgz.lock
+52 silly gunzTarPerm modes [ '755', '644' ]
+53 silly gunzTarPerm extractEntry package.json
+54 silly gunzTarPerm extractEntry tasks/sass.js
+55 silly gunzTarPerm extractEntry readme.md
+56 silly lockFile fa4a5cca-pogradec-node-modules-grunt-sass tar://D:\wamp\www\pogradec\node_modules\grunt-sass
+57 silly lockFile fa4a5cca-pogradec-node-modules-grunt-sass tar://D:\wamp\www\pogradec\node_modules\grunt-sass
+58 silly lockFile 4b5289ab-he-grunt-sass-0-16-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\grunt-sass\0.16.0\package.tgz
+59 silly lockFile 4b5289ab-he-grunt-sass-0-16-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\grunt-sass\0.16.0\package.tgz
+60 info preinstall grunt-sass@0.16.0
+61 verbose readDependencies using package.json deps
+62 verbose readDependencies using package.json deps
+63 verbose cache add [ 'chalk@^0.5.1', null ]
+64 verbose cache add name=undefined spec="chalk@^0.5.1" args=["chalk@^0.5.1",null]
+65 verbose parsed url { protocol: null,
+65 verbose parsed url   slashes: null,
+65 verbose parsed url   auth: null,
+65 verbose parsed url   host: null,
+65 verbose parsed url   port: null,
+65 verbose parsed url   hostname: null,
+65 verbose parsed url   hash: null,
+65 verbose parsed url   search: null,
+65 verbose parsed url   query: null,
+65 verbose parsed url   pathname: 'chalk@^0.5.1',
+65 verbose parsed url   path: 'chalk@^0.5.1',
+65 verbose parsed url   href: 'chalk@^0.5.1' }
+66 verbose cache add [ 'each-async@^1.0.0', null ]
+67 verbose cache add name=undefined spec="each-async@^1.0.0" args=["each-async@^1.0.0",null]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: 'each-async@^1.0.0',
+68 verbose parsed url   path: 'each-async@^1.0.0',
+68 verbose parsed url   href: 'each-async@^1.0.0' }
+69 verbose cache add [ 'node-sass@^1.0.0', null ]
+70 verbose cache add name=undefined spec="node-sass@^1.0.0" args=["node-sass@^1.0.0",null]
+71 verbose parsed url { protocol: null,
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: 'node-sass@^1.0.0',
+71 verbose parsed url   path: 'node-sass@^1.0.0',
+71 verbose parsed url   href: 'node-sass@^1.0.0' }
+72 verbose cache add [ 'object-assign@^1.0.0', null ]
+73 verbose cache add name=undefined spec="object-assign@^1.0.0" args=["object-assign@^1.0.0",null]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: 'object-assign@^1.0.0',
+74 verbose parsed url   path: 'object-assign@^1.0.0',
+74 verbose parsed url   href: 'object-assign@^1.0.0' }
+75 verbose cache add name="chalk" spec="^0.5.1" args=["chalk","^0.5.1"]
+76 verbose parsed url { protocol: null,
+76 verbose parsed url   slashes: null,
+76 verbose parsed url   auth: null,
+76 verbose parsed url   host: null,
+76 verbose parsed url   port: null,
+76 verbose parsed url   hostname: null,
+76 verbose parsed url   hash: null,
+76 verbose parsed url   search: null,
+76 verbose parsed url   query: null,
+76 verbose parsed url   pathname: '^0.5.1',
+76 verbose parsed url   path: '^0.5.1',
+76 verbose parsed url   href: '^0.5.1' }
+77 verbose addNamed [ 'chalk', '^0.5.1' ]
+78 verbose addNamed [ null, '>=0.5.1-0 <0.6.0-0' ]
+79 silly lockFile 24b6c7c3-chalk-0-5-1 chalk@^0.5.1
+80 verbose lock chalk@^0.5.1 C:\Users\admin\AppData\Roaming\npm-cache\24b6c7c3-chalk-0-5-1.lock
+81 verbose cache add name="each-async" spec="^1.0.0" args=["each-async","^1.0.0"]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: '^1.0.0',
+82 verbose parsed url   path: '^1.0.0',
+82 verbose parsed url   href: '^1.0.0' }
+83 verbose addNamed [ 'each-async', '^1.0.0' ]
+84 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+85 silly lockFile 61783ba7-each-async-1-0-0 each-async@^1.0.0
+86 verbose lock each-async@^1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\61783ba7-each-async-1-0-0.lock
+87 verbose cache add name="node-sass" spec="^1.0.0" args=["node-sass","^1.0.0"]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: '^1.0.0',
+88 verbose parsed url   path: '^1.0.0',
+88 verbose parsed url   href: '^1.0.0' }
+89 verbose addNamed [ 'node-sass', '^1.0.0' ]
+90 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+91 silly lockFile c1b865c6-node-sass-1-0-0 node-sass@^1.0.0
+92 verbose lock node-sass@^1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\c1b865c6-node-sass-1-0-0.lock
+93 verbose cache add name="object-assign" spec="^1.0.0" args=["object-assign","^1.0.0"]
+94 verbose parsed url { protocol: null,
+94 verbose parsed url   slashes: null,
+94 verbose parsed url   auth: null,
+94 verbose parsed url   host: null,
+94 verbose parsed url   port: null,
+94 verbose parsed url   hostname: null,
+94 verbose parsed url   hash: null,
+94 verbose parsed url   search: null,
+94 verbose parsed url   query: null,
+94 verbose parsed url   pathname: '^1.0.0',
+94 verbose parsed url   path: '^1.0.0',
+94 verbose parsed url   href: '^1.0.0' }
+95 verbose addNamed [ 'object-assign', '^1.0.0' ]
+96 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+97 silly lockFile 9d7b8598-object-assign-1-0-0 object-assign@^1.0.0
+98 verbose lock object-assign@^1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\9d7b8598-object-assign-1-0-0.lock
+99 silly addNameRange { name: 'each-async',
+99 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+99 silly addNameRange   hasData: false }
+100 silly addNameRange { name: 'chalk', range: '>=0.5.1-0 <0.6.0-0', hasData: false }
+101 silly addNameRange { name: 'node-sass',
+101 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+101 silly addNameRange   hasData: false }
+102 silly addNameRange { name: 'object-assign',
+102 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+102 silly addNameRange   hasData: false }
+103 verbose url raw chalk
+104 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+105 verbose url resolved https://registry.npmjs.org/chalk
+106 info trying registry request attempt 1 at 01:14:26
+107 verbose etag "9E0JQRYO7FVLJQQ3KC1GZ41HV"
+108 http GET https://registry.npmjs.org/chalk
+109 verbose url raw object-assign
+110 verbose url resolving [ 'https://registry.npmjs.org/', './object-assign' ]
+111 verbose url resolved https://registry.npmjs.org/object-assign
+112 info trying registry request attempt 1 at 01:14:26
+113 verbose etag "D7PGBEA8M0MPDSDFXFILFBXF5"
+114 http GET https://registry.npmjs.org/object-assign
+115 verbose url raw each-async
+116 verbose url resolving [ 'https://registry.npmjs.org/', './each-async' ]
+117 verbose url resolved https://registry.npmjs.org/each-async
+118 info trying registry request attempt 1 at 01:14:26
+119 verbose etag "44QZHSMEH17KRGISW4MHKJOZQ"
+120 http GET https://registry.npmjs.org/each-async
+121 verbose url raw node-sass
+122 verbose url resolving [ 'https://registry.npmjs.org/', './node-sass' ]
+123 verbose url resolved https://registry.npmjs.org/node-sass
+124 info trying registry request attempt 1 at 01:14:26
+125 verbose etag "CLYNKPOD8DXN8KL333PWDFUXH"
+126 http GET https://registry.npmjs.org/node-sass
+127 http 304 https://registry.npmjs.org/chalk
+128 silly registry.get cb [ 304,
+128 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:28 GMT',
+128 silly registry.get     server: 'Apache',
+128 silly registry.get     via: '1.1 varnish',
+128 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:17 GMT',
+128 silly registry.get     'cache-control': 'max-age=60',
+128 silly registry.get     etag: '"9E0JQRYO7FVLJQQ3KC1GZ41HV"',
+128 silly registry.get     age: '12',
+128 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+128 silly registry.get     'x-cache': 'HIT',
+128 silly registry.get     'x-cache-hits': '2',
+128 silly registry.get     'x-timer': 'S1413933268.727219,VS0,VE0',
+128 silly registry.get     vary: 'Accept',
+128 silly registry.get     'content-length': '0',
+128 silly registry.get     'keep-alive': 'timeout=10, max=50',
+128 silly registry.get     connection: 'Keep-Alive' } ]
+129 verbose etag chalk from cache
+130 http 304 https://registry.npmjs.org/object-assign
+131 silly registry.get cb [ 304,
+131 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:28 GMT',
+131 silly registry.get     server: 'Apache',
+131 silly registry.get     via: '1.1 varnish',
+131 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:28 GMT',
+131 silly registry.get     'cache-control': 'max-age=60',
+131 silly registry.get     etag: '"D7PGBEA8M0MPDSDFXFILFBXF5"',
+131 silly registry.get     age: '9',
+131 silly registry.get     'x-served-by': 'cache-fra1225-FRA',
+131 silly registry.get     'x-cache': 'HIT',
+131 silly registry.get     'x-cache-hits': '1',
+131 silly registry.get     'x-timer': 'S1413933268.734608,VS0,VE0',
+131 silly registry.get     vary: 'Accept',
+131 silly registry.get     'content-length': '0',
+131 silly registry.get     'keep-alive': 'timeout=10, max=50',
+131 silly registry.get     connection: 'Keep-Alive' } ]
+132 verbose etag object-assign from cache
+133 http 304 https://registry.npmjs.org/each-async
+134 silly registry.get cb [ 304,
+134 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:28 GMT',
+134 silly registry.get     server: 'Apache',
+134 silly registry.get     via: '1.1 varnish',
+134 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:28 GMT',
+134 silly registry.get     'cache-control': 'max-age=60',
+134 silly registry.get     etag: '"44QZHSMEH17KRGISW4MHKJOZQ"',
+134 silly registry.get     age: '6',
+134 silly registry.get     'x-served-by': 'cache-fra1248-FRA',
+134 silly registry.get     'x-cache': 'HIT',
+134 silly registry.get     'x-cache-hits': '1',
+134 silly registry.get     'x-timer': 'S1413933268.738624,VS0,VE0',
+134 silly registry.get     vary: 'Accept',
+134 silly registry.get     'content-length': '0',
+134 silly registry.get     'keep-alive': 'timeout=10, max=50',
+134 silly registry.get     connection: 'Keep-Alive' } ]
+135 verbose etag each-async from cache
+136 silly addNameRange number 2 { name: 'each-async',
+136 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+136 silly addNameRange   hasData: true }
+137 silly addNameRange versions [ 'each-async',
+137 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '1.0.0', '1.1.0' ] ]
+138 verbose addNamed [ 'each-async', '1.1.0' ]
+139 verbose addNamed [ '1.1.0', '1.1.0' ]
+140 silly lockFile 5cf32ebb-each-async-1-1-0 each-async@1.1.0
+141 verbose lock each-async@1.1.0 C:\Users\admin\AppData\Roaming\npm-cache\5cf32ebb-each-async-1-1-0.lock
+142 silly addNameRange number 2 { name: 'chalk', range: '>=0.5.1-0 <0.6.0-0', hasData: true }
+143 silly addNameRange versions [ 'chalk',
+143 silly addNameRange   [ '0.1.0',
+143 silly addNameRange     '0.1.1',
+143 silly addNameRange     '0.2.0',
+143 silly addNameRange     '0.2.1',
+143 silly addNameRange     '0.3.0',
+143 silly addNameRange     '0.4.0',
+143 silly addNameRange     '0.5.0',
+143 silly addNameRange     '0.5.1' ] ]
+144 verbose addNamed [ 'chalk', '0.5.1' ]
+145 verbose addNamed [ '0.5.1', '0.5.1' ]
+146 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+147 verbose lock chalk@0.5.1 C:\Users\admin\AppData\Roaming\npm-cache\c28973bb-chalk-0-5-1.lock
+148 silly addNameRange number 2 { name: 'object-assign',
+148 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+148 silly addNameRange   hasData: true }
+149 silly addNameRange versions [ 'object-assign',
+149 silly addNameRange   [ '0.1.0',
+149 silly addNameRange     '0.1.1',
+149 silly addNameRange     '0.1.2',
+149 silly addNameRange     '0.2.0',
+149 silly addNameRange     '0.2.1',
+149 silly addNameRange     '0.2.2',
+149 silly addNameRange     '0.3.0',
+149 silly addNameRange     '0.3.1',
+149 silly addNameRange     '0.4.0',
+149 silly addNameRange     '1.0.0' ] ]
+150 verbose addNamed [ 'object-assign', '1.0.0' ]
+151 verbose addNamed [ '1.0.0', '1.0.0' ]
+152 silly lockFile e472951c-object-assign-1-0-0 object-assign@1.0.0
+153 verbose lock object-assign@1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\e472951c-object-assign-1-0-0.lock
+154 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+155 silly lockFile c28973bb-chalk-0-5-1 chalk@0.5.1
+156 silly lockFile 24b6c7c3-chalk-0-5-1 chalk@^0.5.1
+157 silly lockFile 24b6c7c3-chalk-0-5-1 chalk@^0.5.1
+158 silly lockFile 5cf32ebb-each-async-1-1-0 each-async@1.1.0
+159 silly lockFile 5cf32ebb-each-async-1-1-0 each-async@1.1.0
+160 silly lockFile 61783ba7-each-async-1-0-0 each-async@^1.0.0
+161 silly lockFile 61783ba7-each-async-1-0-0 each-async@^1.0.0
+162 silly lockFile e472951c-object-assign-1-0-0 object-assign@1.0.0
+163 silly lockFile e472951c-object-assign-1-0-0 object-assign@1.0.0
+164 silly lockFile 9d7b8598-object-assign-1-0-0 object-assign@^1.0.0
+165 silly lockFile 9d7b8598-object-assign-1-0-0 object-assign@^1.0.0
+166 http 304 https://registry.npmjs.org/node-sass
+167 silly registry.get cb [ 304,
+167 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:28 GMT',
+167 silly registry.get     server: 'Apache',
+167 silly registry.get     via: '1.1 varnish',
+167 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:29 GMT',
+167 silly registry.get     'cache-control': 'max-age=60',
+167 silly registry.get     etag: '"CLYNKPOD8DXN8KL333PWDFUXH"',
+167 silly registry.get     age: '0',
+167 silly registry.get     'x-served-by': 'cache-fra1242-FRA',
+167 silly registry.get     'x-cache': 'HIT',
+167 silly registry.get     'x-cache-hits': '1',
+167 silly registry.get     'x-timer': 'S1413933268.742641,VS0,VE430',
+167 silly registry.get     vary: 'Accept',
+167 silly registry.get     'content-length': '0',
+167 silly registry.get     'keep-alive': 'timeout=10, max=50',
+167 silly registry.get     connection: 'Keep-Alive' } ]
+168 verbose etag node-sass from cache
+169 silly addNameRange number 2 { name: 'node-sass', range: '>=1.0.0-0 <2.0.0-0', hasData: true }
+170 silly addNameRange versions [ 'node-sass',
+170 silly addNameRange   [ '0.2.0',
+170 silly addNameRange     '0.2.1',
+170 silly addNameRange     '0.2.2',
+170 silly addNameRange     '0.2.3',
+170 silly addNameRange     '0.2.4',
+170 silly addNameRange     '0.2.5',
+170 silly addNameRange     '0.2.6',
+170 silly addNameRange     '0.3.0',
+170 silly addNameRange     '0.4.0',
+170 silly addNameRange     '0.4.1',
+170 silly addNameRange     '0.4.2',
+170 silly addNameRange     '0.4.3',
+170 silly addNameRange     '0.4.4',
+170 silly addNameRange     '0.5.0',
+170 silly addNameRange     '0.5.1',
+170 silly addNameRange     '0.5.2',
+170 silly addNameRange     '0.5.3',
+170 silly addNameRange     '0.5.4',
+170 silly addNameRange     '0.6.0',
+170 silly addNameRange     '0.6.1',
+170 silly addNameRange     '0.6.2',
+170 silly addNameRange     '0.6.3',
+170 silly addNameRange     '0.6.4',
+170 silly addNameRange     '0.6.5',
+170 silly addNameRange     '0.6.6',
+170 silly addNameRange     '0.6.7',
+170 silly addNameRange     '0.7.0-alpha',
+170 silly addNameRange     '0.7.0',
+170 silly addNameRange     '0.8.0',
+170 silly addNameRange     '0.8.1',
+170 silly addNameRange     '0.8.2',
+170 silly addNameRange     '0.8.3',
+170 silly addNameRange     '0.8.4',
+170 silly addNameRange     '0.8.5',
+170 silly addNameRange     '0.8.6',
+170 silly addNameRange     '0.9.0',
+170 silly addNameRange     '0.9.1',
+170 silly addNameRange     '0.9.2',
+170 silly addNameRange     '0.9.3',
+170 silly addNameRange     '0.9.4-rc1',
+170 silly addNameRange     '0.9.4',
+170 silly addNameRange     '0.9.5-rc1',
+170 silly addNameRange     '0.9.5',
+170 silly addNameRange     '0.9.6',
+170 silly addNameRange     '1.0.0',
+170 silly addNameRange     '1.0.1' ] ]
+171 verbose addNamed [ 'node-sass', '1.0.1' ]
+172 verbose addNamed [ '1.0.1', '1.0.1' ]
+173 silly lockFile efb1d145-node-sass-1-0-1 node-sass@1.0.1
+174 verbose lock node-sass@1.0.1 C:\Users\admin\AppData\Roaming\npm-cache\efb1d145-node-sass-1-0-1.lock
+175 silly lockFile efb1d145-node-sass-1-0-1 node-sass@1.0.1
+176 silly lockFile efb1d145-node-sass-1-0-1 node-sass@1.0.1
+177 silly lockFile c1b865c6-node-sass-1-0-0 node-sass@^1.0.0
+178 silly lockFile c1b865c6-node-sass-1-0-0 node-sass@^1.0.0
+179 silly resolved [ { name: 'chalk',
+179 silly resolved     version: '0.5.1',
+179 silly resolved     description: 'Terminal string styling done right. Created because the `colors` module does some really horrible things.',
+179 silly resolved     license: 'MIT',
+179 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/chalk' },
+179 silly resolved     maintainers: [ [Object], [Object] ],
+179 silly resolved     engines: { node: '>=0.10.0' },
+179 silly resolved     scripts: { test: 'mocha', bench: 'matcha benchmark.js' },
+179 silly resolved     files: [ 'index.js' ],
+179 silly resolved     keywords:
+179 silly resolved      [ 'color',
+179 silly resolved        'colour',
+179 silly resolved        'colors',
+179 silly resolved        'terminal',
+179 silly resolved        'console',
+179 silly resolved        'cli',
+179 silly resolved        'string',
+179 silly resolved        'ansi',
+179 silly resolved        'styles',
+179 silly resolved        'tty',
+179 silly resolved        'formatting',
+179 silly resolved        'rgb',
+179 silly resolved        '256',
+179 silly resolved        'shell',
+179 silly resolved        'xterm',
+179 silly resolved        'log',
+179 silly resolved        'logging',
+179 silly resolved        'command-line',
+179 silly resolved        'text' ],
+179 silly resolved     dependencies:
+179 silly resolved      { 'ansi-styles': '^1.1.0',
+179 silly resolved        'escape-string-regexp': '^1.0.0',
+179 silly resolved        'has-ansi': '^0.1.0',
+179 silly resolved        'strip-ansi': '^0.3.0',
+179 silly resolved        'supports-color': '^0.2.0' },
+179 silly resolved     devDependencies: { matcha: '^0.5.0', mocha: '*' },
+179 silly resolved     gitHead: '994758f01293f1fdcf63282e9917cb9f2cfbdaac',
+179 silly resolved     bugs: { url: 'https://github.com/sindresorhus/chalk/issues' },
+179 silly resolved     homepage: 'https://github.com/sindresorhus/chalk',
+179 silly resolved     _id: 'chalk@0.5.1',
+179 silly resolved     _shasum: '663b3a648b68b55d04690d49167aa837858f2174',
+179 silly resolved     _from: 'chalk@^0.5.1',
+179 silly resolved     _npmVersion: '1.4.14',
+179 silly resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+179 silly resolved     dist:
+179 silly resolved      { shasum: '663b3a648b68b55d04690d49167aa837858f2174',
+179 silly resolved        tarball: 'http://registry.npmjs.org/chalk/-/chalk-0.5.1.tgz' },
+179 silly resolved     directories: {},
+179 silly resolved     _resolved: 'https://registry.npmjs.org/chalk/-/chalk-0.5.1.tgz',
+179 silly resolved     readme: 'ERROR: No README data found!' },
+179 silly resolved   { name: 'each-async',
+179 silly resolved     version: '1.1.0',
+179 silly resolved     description: 'Async concurrent iterator (async forEach)',
+179 silly resolved     license: 'MIT',
+179 silly resolved     repository:
+179 silly resolved      { type: 'git',
+179 silly resolved        url: 'https://github.com/sindresorhus/each-async' },
+179 silly resolved     author:
+179 silly resolved      { name: 'Sindre Sorhus',
+179 silly resolved        email: 'sindresorhus@gmail.com',
+179 silly resolved        url: 'http://sindresorhus.com' },
+179 silly resolved     engines: { node: '>=0.10.0' },
+179 silly resolved     scripts: { test: 'mocha' },
+179 silly resolved     files: [ 'index.js' ],
+179 silly resolved     keywords:
+179 silly resolved      [ 'each',
+179 silly resolved        'async',
+179 silly resolved        'asynchronous',
+179 silly resolved        'iteration',
+179 silly resolved        'iterate',
+179 silly resolved        'loop',
+179 silly resolved        'foreach',
+179 silly resolved        'parallel',
+179 silly resolved        'concurrent',
+179 silly resolved        'array',
+179 silly resolved        'flow',
+179 silly resolved        'control flow' ],
+179 silly resolved     dependencies: { onetime: '^1.0.0', setimmediate: '^1.0.2' },
+179 silly resolved     devDependencies: { mocha: '*' },
+179 silly resolved     gitHead: '04687191a7ee25f4059f45aa167d5e593d5f1a53',
+179 silly resolved     bugs: { url: 'https://github.com/sindresorhus/each-async/issues' },
+179 silly resolved     homepage: 'https://github.com/sindresorhus/each-async',
+179 silly resolved     _id: 'each-async@1.1.0',
+179 silly resolved     _shasum: 'd7473d5140a870414d5736a337e596fee14d369b',
+179 silly resolved     _from: 'each-async@^1.0.0',
+179 silly resolved     _npmVersion: '2.0.0',
+179 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+179 silly resolved     maintainers: [ [Object] ],
+179 silly resolved     dist:
+179 silly resolved      { shasum: 'd7473d5140a870414d5736a337e596fee14d369b',
+179 silly resolved        tarball: 'http://registry.npmjs.org/each-async/-/each-async-1.1.0.tgz' },
+179 silly resolved     directories: {},
+179 silly resolved     _resolved: 'https://registry.npmjs.org/each-async/-/each-async-1.1.0.tgz',
+179 silly resolved     readme: 'ERROR: No README data found!' },
+179 silly resolved   { name: 'object-assign',
+179 silly resolved     version: '1.0.0',
+179 silly resolved     description: 'ES6 Object.assign() ponyfill',
+179 silly resolved     license: 'MIT',
+179 silly resolved     repository:
+179 silly resolved      { type: 'git',
+179 silly resolved        url: 'https://github.com/sindresorhus/object-assign' },
+179 silly resolved     author:
+179 silly resolved      { name: 'Sindre Sorhus',
+179 silly resolved        email: 'sindresorhus@gmail.com',
+179 silly resolved        url: 'http://sindresorhus.com' },
+179 silly resolved     engines: { node: '>=0.10.0' },
+179 silly resolved     scripts: { test: 'mocha' },
+179 silly resolved     files: [ 'index.js' ],
+179 silly resolved     keywords:
+179 silly resolved      [ 'object',
+179 silly resolved        'assign',
+179 silly resolved        'extend',
+179 silly resolved        'properties',
+179 silly resolved        'es6',
+179 silly resolved        'ecmascript',
+179 silly resolved        'harmony',
+179 silly resolved        'ponyfill',
+179 silly resolved        'prollyfill',
+179 silly resolved        'polyfill',
+179 silly resolved        'shim',
+179 silly resolved        'browser' ],
+179 silly resolved     devDependencies: { mocha: '*' },
+179 silly resolved     gitHead: 'a17eef6882cf3ffcee46f7d9d5a5ba0abc6b029c',
+179 silly resolved     bugs: { url: 'https://github.com/sindresorhus/object-assign/issues' },
+179 silly resolved     homepage: 'https://github.com/sindresorhus/object-assign',
+179 silly resolved     _id: 'object-assign@1.0.0',
+179 silly resolved     _shasum: 'e65dc8766d3b47b4b8307465c8311da030b070a6',
+179 silly resolved     _from: 'object-assign@^1.0.0',
+179 silly resolved     _npmVersion: '1.4.21',
+179 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+179 silly resolved     maintainers: [ [Object] ],
+179 silly resolved     dist:
+179 silly resolved      { shasum: 'e65dc8766d3b47b4b8307465c8311da030b070a6',
+179 silly resolved        tarball: 'http://registry.npmjs.org/object-assign/-/object-assign-1.0.0.tgz' },
+179 silly resolved     directories: {},
+179 silly resolved     _resolved: 'https://registry.npmjs.org/object-assign/-/object-assign-1.0.0.tgz',
+179 silly resolved     readme: 'ERROR: No README data found!' },
+179 silly resolved   { author:
+179 silly resolved      { name: 'Andrew Nesbitt',
+179 silly resolved        email: 'andrewnez@gmail.com',
+179 silly resolved        url: 'http://andrew.github.com' },
+179 silly resolved     name: 'node-sass',
+179 silly resolved     description: 'wrapper around libsass',
+179 silly resolved     version: '1.0.1',
+179 silly resolved     homepage: 'https://github.com/sass/node-sass',
+179 silly resolved     keywords: [ 'sass', 'css', 'libsass', 'scss', 'style', 'preprocessor' ],
+179 silly resolved     bugs: { url: 'https://github.com/sass/node-sass/issues' },
+179 silly resolved     licenses: [ [Object] ],
+179 silly resolved     main: './sass.js',
+179 silly resolved     repository: { type: 'git', url: 'git://github.com/sass/node-sass.git' },
+179 silly resolved     scripts:
+179 silly resolved      { install: 'node build.js',
+179 silly resolved        test: 'node scripts/test',
+179 silly resolved        coverage: 'node scripts/coverage',
+179 silly resolved        pretest: 'node scripts/lint',
+179 silly resolved        prepublish: 'node scripts/prepublish' },
+179 silly resolved     bin: { 'node-sass': 'bin/node-sass' },
+179 silly resolved     gypfile: true,
+179 silly resolved     engines: { node: '>=0.10.0' },
+179 silly resolved     dependencies:
+179 silly resolved      { chalk: '~0.5.1',
+179 silly resolved        mkdirp: '~0.5.0',
+179 silly resolved        mocha: '~1.21.4',
+179 silly resolved        nan: '~1.3.0',
+179 silly resolved        'node-watch': '~0.3.4',
+179 silly resolved        'object-assign': '~1.0.0',
+179 silly resolved        shelljs: '~0.3.0',
+179 silly resolved        sinon: '~1.10.3',
+179 silly resolved        yargs: '~1.3.1',
+179 silly resolved        'get-stdin': '~3.0.0' },
+179 silly resolved     devDependencies:
+179 silly resolved      { coveralls: '^2.11.1',
+179 silly resolved        'cross-spawn': '^0.2.3',
+179 silly resolved        jscoverage: '^0.5.6',
+179 silly resolved        jshint: '^2.5.5',
+179 silly resolved        'mocha-lcov-reporter': '^0.0.1',
+179 silly resolved        'object-assign': '^1.0.0' },
+179 silly resolved     _id: 'node-sass@1.0.1',
+179 silly resolved     dist:
+179 silly resolved      { shasum: 'e2ccacfe41c44a73b5efd50d5bfd481cec38adae',
+179 silly resolved        tarball: 'http://registry.npmjs.org/node-sass/-/node-sass-1.0.1.tgz' },
+179 silly resolved     _from: 'node-sass@^1.0.0',
+179 silly resolved     _npmVersion: '1.4.6',
+179 silly resolved     _npmUser: { name: 'andrewnez', email: 'andrewnez@gmail.com' },
+179 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+179 silly resolved     directories: {},
+179 silly resolved     _shasum: 'e2ccacfe41c44a73b5efd50d5bfd481cec38adae',
+179 silly resolved     _resolved: 'https://registry.npmjs.org/node-sass/-/node-sass-1.0.1.tgz',
+179 silly resolved     readme: 'ERROR: No README data found!' } ]
+180 info install chalk@0.5.1 into D:\wamp\www\pogradec\node_modules\grunt-sass
+181 info install each-async@1.1.0 into D:\wamp\www\pogradec\node_modules\grunt-sass
+182 info install object-assign@1.0.0 into D:\wamp\www\pogradec\node_modules\grunt-sass
+183 info install node-sass@1.0.1 into D:\wamp\www\pogradec\node_modules\grunt-sass
+184 info installOne chalk@0.5.1
+185 info installOne each-async@1.1.0
+186 info installOne object-assign@1.0.0
+187 info installOne node-sass@1.0.1
+188 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk unbuild
+189 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async unbuild
+190 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign unbuild
+191 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\node-sass unbuild
+192 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\chalk\0.5.1\package.tgz
+193 silly lockFile b181aef0-es-grunt-sass-node-modules-chalk tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+194 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk C:\Users\admin\AppData\Roaming\npm-cache\b181aef0-es-grunt-sass-node-modules-chalk.lock
+195 silly lockFile 37753a83-pm-cache-chalk-0-5-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\chalk\0.5.1\package.tgz
+196 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\chalk\0.5.1\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\37753a83-pm-cache-chalk-0-5-1-package-tgz.lock
+197 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\each-async\1.1.0\package.tgz
+198 silly lockFile fe275bb8-unt-sass-node-modules-each-async tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+199 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async C:\Users\admin\AppData\Roaming\npm-cache\fe275bb8-unt-sass-node-modules-each-async.lock
+200 silly lockFile 05249e6d-che-each-async-1-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\each-async\1.1.0\package.tgz
+201 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\each-async\1.1.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\05249e6d-che-each-async-1-1-0-package-tgz.lock
+202 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\object-assign\1.0.0\package.tgz
+203 silly lockFile d0db1671--sass-node-modules-object-assign tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign
+204 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign C:\Users\admin\AppData\Roaming\npm-cache\d0db1671--sass-node-modules-object-assign.lock
+205 silly lockFile cb7f5a5c--object-assign-1-0-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\object-assign\1.0.0\package.tgz
+206 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\object-assign\1.0.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\cb7f5a5c--object-assign-1-0-0-package-tgz.lock
+207 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\node-sass\1.0.1\package.tgz
+208 silly lockFile 11e678ae-runt-sass-node-modules-node-sass tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\node-sass
+209 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\node-sass C:\Users\admin\AppData\Roaming\npm-cache\11e678ae-runt-sass-node-modules-node-sass.lock
+210 silly lockFile ca15cdc5-ache-node-sass-1-0-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\node-sass\1.0.1\package.tgz
+211 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\node-sass\1.0.1\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\ca15cdc5-ache-node-sass-1-0-1-package-tgz.lock
+212 silly gunzTarPerm modes [ '755', '644' ]
+213 silly gunzTarPerm modes [ '755', '644' ]
+214 silly gunzTarPerm modes [ '755', '644' ]
+215 silly gunzTarPerm modes [ '755', '644' ]
+216 silly gunzTarPerm extractEntry package.json
+217 silly gunzTarPerm extractEntry index.js
+218 silly gunzTarPerm extractEntry readme.md
+219 silly gunzTarPerm extractEntry package.json
+220 silly gunzTarPerm extractEntry package.json
+221 silly gunzTarPerm extractEntry index.js
+222 silly gunzTarPerm extractEntry readme.md
+223 silly gunzTarPerm extractEntry index.js
+224 silly gunzTarPerm extractEntry readme.md
+225 silly lockFile b181aef0-es-grunt-sass-node-modules-chalk tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+226 silly lockFile b181aef0-es-grunt-sass-node-modules-chalk tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+227 silly gunzTarPerm extractEntry package.json
+228 silly lockFile 37753a83-pm-cache-chalk-0-5-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\chalk\0.5.1\package.tgz
+229 silly lockFile 37753a83-pm-cache-chalk-0-5-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\chalk\0.5.1\package.tgz
+230 silly gunzTarPerm extractEntry .npmignore
+231 silly gunzTarPerm extractEntry README.md
+232 info preinstall chalk@0.5.1
+233 verbose readDependencies using package.json deps
+234 verbose readDependencies using package.json deps
+235 silly lockFile fe275bb8-unt-sass-node-modules-each-async tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+236 silly lockFile fe275bb8-unt-sass-node-modules-each-async tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+237 silly lockFile 05249e6d-che-each-async-1-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\each-async\1.1.0\package.tgz
+238 silly lockFile 05249e6d-che-each-async-1-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\each-async\1.1.0\package.tgz
+239 silly lockFile d0db1671--sass-node-modules-object-assign tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign
+240 silly lockFile d0db1671--sass-node-modules-object-assign tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign
+241 silly lockFile cb7f5a5c--object-assign-1-0-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\object-assign\1.0.0\package.tgz
+242 silly lockFile cb7f5a5c--object-assign-1-0-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\object-assign\1.0.0\package.tgz
+243 silly gunzTarPerm extractEntry LICENSE
+244 info preinstall each-async@1.1.0
+245 info preinstall object-assign@1.0.0
+246 verbose readDependencies using package.json deps
+247 verbose cache add [ 'ansi-styles@^1.1.0', null ]
+248 verbose cache add name=undefined spec="ansi-styles@^1.1.0" args=["ansi-styles@^1.1.0",null]
+249 verbose parsed url { protocol: null,
+249 verbose parsed url   slashes: null,
+249 verbose parsed url   auth: null,
+249 verbose parsed url   host: null,
+249 verbose parsed url   port: null,
+249 verbose parsed url   hostname: null,
+249 verbose parsed url   hash: null,
+249 verbose parsed url   search: null,
+249 verbose parsed url   query: null,
+249 verbose parsed url   pathname: 'ansi-styles@^1.1.0',
+249 verbose parsed url   path: 'ansi-styles@^1.1.0',
+249 verbose parsed url   href: 'ansi-styles@^1.1.0' }
+250 verbose cache add [ 'escape-string-regexp@^1.0.0', null ]
+251 verbose cache add name=undefined spec="escape-string-regexp@^1.0.0" args=["escape-string-regexp@^1.0.0",null]
+252 verbose parsed url { protocol: null,
+252 verbose parsed url   slashes: null,
+252 verbose parsed url   auth: null,
+252 verbose parsed url   host: null,
+252 verbose parsed url   port: null,
+252 verbose parsed url   hostname: null,
+252 verbose parsed url   hash: null,
+252 verbose parsed url   search: null,
+252 verbose parsed url   query: null,
+252 verbose parsed url   pathname: 'escape-string-regexp@^1.0.0',
+252 verbose parsed url   path: 'escape-string-regexp@^1.0.0',
+252 verbose parsed url   href: 'escape-string-regexp@^1.0.0' }
+253 verbose cache add [ 'has-ansi@^0.1.0', null ]
+254 verbose cache add name=undefined spec="has-ansi@^0.1.0" args=["has-ansi@^0.1.0",null]
+255 verbose parsed url { protocol: null,
+255 verbose parsed url   slashes: null,
+255 verbose parsed url   auth: null,
+255 verbose parsed url   host: null,
+255 verbose parsed url   port: null,
+255 verbose parsed url   hostname: null,
+255 verbose parsed url   hash: null,
+255 verbose parsed url   search: null,
+255 verbose parsed url   query: null,
+255 verbose parsed url   pathname: 'has-ansi@^0.1.0',
+255 verbose parsed url   path: 'has-ansi@^0.1.0',
+255 verbose parsed url   href: 'has-ansi@^0.1.0' }
+256 verbose cache add [ 'strip-ansi@^0.3.0', null ]
+257 verbose cache add name=undefined spec="strip-ansi@^0.3.0" args=["strip-ansi@^0.3.0",null]
+258 verbose parsed url { protocol: null,
+258 verbose parsed url   slashes: null,
+258 verbose parsed url   auth: null,
+258 verbose parsed url   host: null,
+258 verbose parsed url   port: null,
+258 verbose parsed url   hostname: null,
+258 verbose parsed url   hash: null,
+258 verbose parsed url   search: null,
+258 verbose parsed url   query: null,
+258 verbose parsed url   pathname: 'strip-ansi@^0.3.0',
+258 verbose parsed url   path: 'strip-ansi@^0.3.0',
+258 verbose parsed url   href: 'strip-ansi@^0.3.0' }
+259 verbose cache add [ 'supports-color@^0.2.0', null ]
+260 verbose cache add name=undefined spec="supports-color@^0.2.0" args=["supports-color@^0.2.0",null]
+261 verbose parsed url { protocol: null,
+261 verbose parsed url   slashes: null,
+261 verbose parsed url   auth: null,
+261 verbose parsed url   host: null,
+261 verbose parsed url   port: null,
+261 verbose parsed url   hostname: null,
+261 verbose parsed url   hash: null,
+261 verbose parsed url   search: null,
+261 verbose parsed url   query: null,
+261 verbose parsed url   pathname: 'supports-color@^0.2.0',
+261 verbose parsed url   path: 'supports-color@^0.2.0',
+261 verbose parsed url   href: 'supports-color@^0.2.0' }
+262 verbose readDependencies using package.json deps
+263 verbose cache add name="ansi-styles" spec="^1.1.0" args=["ansi-styles","^1.1.0"]
+264 verbose parsed url { protocol: null,
+264 verbose parsed url   slashes: null,
+264 verbose parsed url   auth: null,
+264 verbose parsed url   host: null,
+264 verbose parsed url   port: null,
+264 verbose parsed url   hostname: null,
+264 verbose parsed url   hash: null,
+264 verbose parsed url   search: null,
+264 verbose parsed url   query: null,
+264 verbose parsed url   pathname: '^1.1.0',
+264 verbose parsed url   path: '^1.1.0',
+264 verbose parsed url   href: '^1.1.0' }
+265 verbose addNamed [ 'ansi-styles', '^1.1.0' ]
+266 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+267 silly lockFile f531fbfe-ansi-styles-1-1-0 ansi-styles@^1.1.0
+268 verbose lock ansi-styles@^1.1.0 C:\Users\admin\AppData\Roaming\npm-cache\f531fbfe-ansi-styles-1-1-0.lock
+269 verbose cache add name="escape-string-regexp" spec="^1.0.0" args=["escape-string-regexp","^1.0.0"]
+270 verbose parsed url { protocol: null,
+270 verbose parsed url   slashes: null,
+270 verbose parsed url   auth: null,
+270 verbose parsed url   host: null,
+270 verbose parsed url   port: null,
+270 verbose parsed url   hostname: null,
+270 verbose parsed url   hash: null,
+270 verbose parsed url   search: null,
+270 verbose parsed url   query: null,
+270 verbose parsed url   pathname: '^1.0.0',
+270 verbose parsed url   path: '^1.0.0',
+270 verbose parsed url   href: '^1.0.0' }
+271 verbose addNamed [ 'escape-string-regexp', '^1.0.0' ]
+272 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+273 silly lockFile 9f5f1582-escape-string-regexp-1-0-0 escape-string-regexp@^1.0.0
+274 verbose lock escape-string-regexp@^1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\9f5f1582-escape-string-regexp-1-0-0.lock
+275 verbose cache add name="has-ansi" spec="^0.1.0" args=["has-ansi","^0.1.0"]
+276 verbose parsed url { protocol: null,
+276 verbose parsed url   slashes: null,
+276 verbose parsed url   auth: null,
+276 verbose parsed url   host: null,
+276 verbose parsed url   port: null,
+276 verbose parsed url   hostname: null,
+276 verbose parsed url   hash: null,
+276 verbose parsed url   search: null,
+276 verbose parsed url   query: null,
+276 verbose parsed url   pathname: '^0.1.0',
+276 verbose parsed url   path: '^0.1.0',
+276 verbose parsed url   href: '^0.1.0' }
+277 verbose addNamed [ 'has-ansi', '^0.1.0' ]
+278 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+279 silly lockFile 67e902d7-has-ansi-0-1-0 has-ansi@^0.1.0
+280 verbose lock has-ansi@^0.1.0 C:\Users\admin\AppData\Roaming\npm-cache\67e902d7-has-ansi-0-1-0.lock
+281 verbose cache add name="strip-ansi" spec="^0.3.0" args=["strip-ansi","^0.3.0"]
+282 verbose parsed url { protocol: null,
+282 verbose parsed url   slashes: null,
+282 verbose parsed url   auth: null,
+282 verbose parsed url   host: null,
+282 verbose parsed url   port: null,
+282 verbose parsed url   hostname: null,
+282 verbose parsed url   hash: null,
+282 verbose parsed url   search: null,
+282 verbose parsed url   query: null,
+282 verbose parsed url   pathname: '^0.3.0',
+282 verbose parsed url   path: '^0.3.0',
+282 verbose parsed url   href: '^0.3.0' }
+283 verbose addNamed [ 'strip-ansi', '^0.3.0' ]
+284 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+285 silly lockFile 3a64cb31-strip-ansi-0-3-0 strip-ansi@^0.3.0
+286 verbose lock strip-ansi@^0.3.0 C:\Users\admin\AppData\Roaming\npm-cache\3a64cb31-strip-ansi-0-3-0.lock
+287 verbose cache add name="supports-color" spec="^0.2.0" args=["supports-color","^0.2.0"]
+288 verbose parsed url { protocol: null,
+288 verbose parsed url   slashes: null,
+288 verbose parsed url   auth: null,
+288 verbose parsed url   host: null,
+288 verbose parsed url   port: null,
+288 verbose parsed url   hostname: null,
+288 verbose parsed url   hash: null,
+288 verbose parsed url   search: null,
+288 verbose parsed url   query: null,
+288 verbose parsed url   pathname: '^0.2.0',
+288 verbose parsed url   path: '^0.2.0',
+288 verbose parsed url   href: '^0.2.0' }
+289 verbose addNamed [ 'supports-color', '^0.2.0' ]
+290 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+291 silly lockFile e3aa172d-supports-color-0-2-0 supports-color@^0.2.0
+292 verbose lock supports-color@^0.2.0 C:\Users\admin\AppData\Roaming\npm-cache\e3aa172d-supports-color-0-2-0.lock
+293 verbose readDependencies using package.json deps
+294 verbose readDependencies using package.json deps
+295 silly resolved []
+296 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign
+297 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\object-assign
+298 verbose linkStuff [ false,
+298 verbose linkStuff   false,
+298 verbose linkStuff   false,
+298 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules' ]
+299 info linkStuff object-assign@1.0.0
+300 verbose linkBins object-assign@1.0.0
+301 verbose linkMans object-assign@1.0.0
+302 verbose rebuildBundles object-assign@1.0.0
+303 silly addNameRange { name: 'ansi-styles',
+303 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+303 silly addNameRange   hasData: false }
+304 silly addNameRange { name: 'escape-string-regexp',
+304 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+304 silly addNameRange   hasData: false }
+305 silly addNameRange { name: 'has-ansi', range: '>=0.1.0-0 <0.2.0-0', hasData: false }
+306 silly addNameRange { name: 'strip-ansi',
+306 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+306 silly addNameRange   hasData: false }
+307 verbose cache add [ 'onetime@^1.0.0', null ]
+308 verbose cache add name=undefined spec="onetime@^1.0.0" args=["onetime@^1.0.0",null]
+309 verbose parsed url { protocol: null,
+309 verbose parsed url   slashes: null,
+309 verbose parsed url   auth: null,
+309 verbose parsed url   host: null,
+309 verbose parsed url   port: null,
+309 verbose parsed url   hostname: null,
+309 verbose parsed url   hash: null,
+309 verbose parsed url   search: null,
+309 verbose parsed url   query: null,
+309 verbose parsed url   pathname: 'onetime@^1.0.0',
+309 verbose parsed url   path: 'onetime@^1.0.0',
+309 verbose parsed url   href: 'onetime@^1.0.0' }
+310 verbose cache add [ 'setimmediate@^1.0.2', null ]
+311 verbose cache add name=undefined spec="setimmediate@^1.0.2" args=["setimmediate@^1.0.2",null]
+312 verbose parsed url { protocol: null,
+312 verbose parsed url   slashes: null,
+312 verbose parsed url   auth: null,
+312 verbose parsed url   host: null,
+312 verbose parsed url   port: null,
+312 verbose parsed url   hostname: null,
+312 verbose parsed url   hash: null,
+312 verbose parsed url   search: null,
+312 verbose parsed url   query: null,
+312 verbose parsed url   pathname: 'setimmediate@^1.0.2',
+312 verbose parsed url   path: 'setimmediate@^1.0.2',
+312 verbose parsed url   href: 'setimmediate@^1.0.2' }
+313 silly addNameRange { name: 'supports-color',
+313 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+313 silly addNameRange   hasData: false }
+314 info install object-assign@1.0.0
+315 verbose cache add name="onetime" spec="^1.0.0" args=["onetime","^1.0.0"]
+316 verbose parsed url { protocol: null,
+316 verbose parsed url   slashes: null,
+316 verbose parsed url   auth: null,
+316 verbose parsed url   host: null,
+316 verbose parsed url   port: null,
+316 verbose parsed url   hostname: null,
+316 verbose parsed url   hash: null,
+316 verbose parsed url   search: null,
+316 verbose parsed url   query: null,
+316 verbose parsed url   pathname: '^1.0.0',
+316 verbose parsed url   path: '^1.0.0',
+316 verbose parsed url   href: '^1.0.0' }
+317 verbose addNamed [ 'onetime', '^1.0.0' ]
+318 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+319 silly lockFile d730972f-onetime-1-0-0 onetime@^1.0.0
+320 verbose lock onetime@^1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\d730972f-onetime-1-0-0.lock
+321 verbose cache add name="setimmediate" spec="^1.0.2" args=["setimmediate","^1.0.2"]
+322 verbose parsed url { protocol: null,
+322 verbose parsed url   slashes: null,
+322 verbose parsed url   auth: null,
+322 verbose parsed url   host: null,
+322 verbose parsed url   port: null,
+322 verbose parsed url   hostname: null,
+322 verbose parsed url   hash: null,
+322 verbose parsed url   search: null,
+322 verbose parsed url   query: null,
+322 verbose parsed url   pathname: '^1.0.2',
+322 verbose parsed url   path: '^1.0.2',
+322 verbose parsed url   href: '^1.0.2' }
+323 verbose addNamed [ 'setimmediate', '^1.0.2' ]
+324 verbose addNamed [ null, '>=1.0.2-0 <2.0.0-0' ]
+325 silly lockFile 2d24dfe4-setimmediate-1-0-2 setimmediate@^1.0.2
+326 verbose lock setimmediate@^1.0.2 C:\Users\admin\AppData\Roaming\npm-cache\2d24dfe4-setimmediate-1-0-2.lock
+327 silly gunzTarPerm extractEntry build.js
+328 silly gunzTarPerm extractEntry sass.js
+329 info postinstall object-assign@1.0.0
+330 silly addNameRange { name: 'onetime', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+331 silly addNameRange { name: 'setimmediate',
+331 silly addNameRange   range: '>=1.0.2-0 <2.0.0-0',
+331 silly addNameRange   hasData: false }
+332 silly gunzTarPerm extractEntry binding.cpp
+333 silly gunzTarPerm extractEntry .jshintignore
+334 silly gunzTarPerm extractEntry .jshintrc
+335 silly gunzTarPerm extractEntry appveyor.yml
+336 silly gunzTarPerm extractEntry bin/darwin-x64-v8-3.14/binding.node
+337 silly gunzTarPerm extractEntry bin/linux-ia32-v8-3.14/binding.node
+338 silly gunzTarPerm extractEntry bin/linux-x64-v8-3.14/binding.node
+339 verbose url raw escape-string-regexp
+340 verbose url resolving [ 'https://registry.npmjs.org/', './escape-string-regexp' ]
+341 verbose url resolved https://registry.npmjs.org/escape-string-regexp
+342 info trying registry request attempt 1 at 01:14:28
+343 verbose etag "EMIN7LOE22KESR5DOWJRB8ACW"
+344 http GET https://registry.npmjs.org/escape-string-regexp
+345 verbose url raw has-ansi
+346 verbose url resolving [ 'https://registry.npmjs.org/', './has-ansi' ]
+347 verbose url resolved https://registry.npmjs.org/has-ansi
+348 info trying registry request attempt 1 at 01:14:28
+349 verbose etag "2I8RDBNDGLCZT732CCHKVJUKJ"
+350 http GET https://registry.npmjs.org/has-ansi
+351 verbose url raw supports-color
+352 verbose url resolving [ 'https://registry.npmjs.org/', './supports-color' ]
+353 verbose url resolved https://registry.npmjs.org/supports-color
+354 info trying registry request attempt 1 at 01:14:28
+355 verbose etag "8VB7BVKFWI2B74A3ZQ7EW2AZ1"
+356 http GET https://registry.npmjs.org/supports-color
+357 verbose url raw onetime
+358 verbose url resolving [ 'https://registry.npmjs.org/', './onetime' ]
+359 verbose url resolved https://registry.npmjs.org/onetime
+360 info trying registry request attempt 1 at 01:14:28
+361 verbose etag "5TO5588I9YTKQB72017A1UGKS"
+362 http GET https://registry.npmjs.org/onetime
+363 verbose url raw ansi-styles
+364 verbose url resolving [ 'https://registry.npmjs.org/', './ansi-styles' ]
+365 verbose url resolved https://registry.npmjs.org/ansi-styles
+366 info trying registry request attempt 1 at 01:14:28
+367 verbose etag "89BTWDCZ6UUTTX6GL9L0IKRTG"
+368 http GET https://registry.npmjs.org/ansi-styles
+369 verbose url raw strip-ansi
+370 verbose url resolving [ 'https://registry.npmjs.org/', './strip-ansi' ]
+371 verbose url resolved https://registry.npmjs.org/strip-ansi
+372 info trying registry request attempt 1 at 01:14:28
+373 verbose etag "75LHXYTAYHSVGUDAKW4Q6NTZR"
+374 http GET https://registry.npmjs.org/strip-ansi
+375 verbose url raw setimmediate
+376 verbose url resolving [ 'https://registry.npmjs.org/', './setimmediate' ]
+377 verbose url resolved https://registry.npmjs.org/setimmediate
+378 info trying registry request attempt 1 at 01:14:28
+379 verbose etag "67RS256CC2CVSN9BIJY282HCF"
+380 http GET https://registry.npmjs.org/setimmediate
+381 silly gunzTarPerm extractEntry bin/node-sass
+382 http 304 https://registry.npmjs.org/escape-string-regexp
+383 silly registry.get cb [ 304,
+383 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+383 silly registry.get     server: 'Apache',
+383 silly registry.get     via: '1.1 varnish',
+383 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+383 silly registry.get     'cache-control': 'max-age=60',
+383 silly registry.get     etag: '"EMIN7LOE22KESR5DOWJRB8ACW"',
+383 silly registry.get     age: '20',
+383 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+383 silly registry.get     'x-cache': 'HIT',
+383 silly registry.get     'x-cache-hits': '1',
+383 silly registry.get     'x-timer': 'S1413933270.088675,VS0,VE0',
+383 silly registry.get     vary: 'Accept',
+383 silly registry.get     'content-length': '0',
+383 silly registry.get     'keep-alive': 'timeout=10, max=50',
+383 silly registry.get     connection: 'Keep-Alive' } ]
+384 verbose etag escape-string-regexp from cache
+385 http 304 https://registry.npmjs.org/has-ansi
+386 silly registry.get cb [ 304,
+386 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+386 silly registry.get     server: 'Apache',
+386 silly registry.get     via: '1.1 varnish',
+386 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+386 silly registry.get     'cache-control': 'max-age=60',
+386 silly registry.get     etag: '"2I8RDBNDGLCZT732CCHKVJUKJ"',
+386 silly registry.get     age: '20',
+386 silly registry.get     'x-served-by': 'cache-fra1221-FRA',
+386 silly registry.get     'x-cache': 'HIT',
+386 silly registry.get     'x-cache-hits': '1',
+386 silly registry.get     'x-timer': 'S1413933270.092178,VS0,VE0',
+386 silly registry.get     vary: 'Accept',
+386 silly registry.get     'content-length': '0',
+386 silly registry.get     'keep-alive': 'timeout=10, max=50',
+386 silly registry.get     connection: 'Keep-Alive' } ]
+387 verbose etag has-ansi from cache
+388 http 304 https://registry.npmjs.org/supports-color
+389 silly registry.get cb [ 304,
+389 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+389 silly registry.get     server: 'Apache',
+389 silly registry.get     via: '1.1 varnish',
+389 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 22:15:55 GMT',
+389 silly registry.get     'cache-control': 'max-age=60',
+389 silly registry.get     etag: '"8VB7BVKFWI2B74A3ZQ7EW2AZ1"',
+389 silly registry.get     age: '20',
+389 silly registry.get     'x-served-by': 'cache-fra1234-FRA',
+389 silly registry.get     'x-cache': 'HIT',
+389 silly registry.get     'x-cache-hits': '423',
+389 silly registry.get     'x-timer': 'S1413933270.096360,VS0,VE0',
+389 silly registry.get     vary: 'Accept',
+389 silly registry.get     'content-length': '0',
+389 silly registry.get     'keep-alive': 'timeout=10, max=50',
+389 silly registry.get     connection: 'Keep-Alive' } ]
+390 verbose etag supports-color from cache
+391 silly addNameRange number 2 { name: 'escape-string-regexp',
+391 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+391 silly addNameRange   hasData: true }
+392 silly addNameRange versions [ 'escape-string-regexp', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+393 verbose addNamed [ 'escape-string-regexp', '1.0.2' ]
+394 verbose addNamed [ '1.0.2', '1.0.2' ]
+395 silly lockFile 963ee3e8-escape-string-regexp-1-0-2 escape-string-regexp@1.0.2
+396 verbose lock escape-string-regexp@1.0.2 C:\Users\admin\AppData\Roaming\npm-cache\963ee3e8-escape-string-regexp-1-0-2.lock
+397 silly addNameRange number 2 { name: 'has-ansi', range: '>=0.1.0-0 <0.2.0-0', hasData: true }
+398 silly addNameRange versions [ 'has-ansi', [ '0.1.0', '1.0.0' ] ]
+399 verbose addNamed [ 'has-ansi', '0.1.0' ]
+400 verbose addNamed [ '0.1.0', '0.1.0' ]
+401 silly lockFile dfbb87ff-has-ansi-0-1-0 has-ansi@0.1.0
+402 verbose lock has-ansi@0.1.0 C:\Users\admin\AppData\Roaming\npm-cache\dfbb87ff-has-ansi-0-1-0.lock
+403 silly addNameRange number 2 { name: 'supports-color',
+403 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+403 silly addNameRange   hasData: true }
+404 silly addNameRange versions [ 'supports-color', [ '0.2.0', '1.0.0', '1.1.0', '1.2.0' ] ]
+405 verbose addNamed [ 'supports-color', '0.2.0' ]
+406 verbose addNamed [ '0.2.0', '0.2.0' ]
+407 silly lockFile bafa6883-supports-color-0-2-0 supports-color@0.2.0
+408 verbose lock supports-color@0.2.0 C:\Users\admin\AppData\Roaming\npm-cache\bafa6883-supports-color-0-2-0.lock
+409 http 304 https://registry.npmjs.org/ansi-styles
+410 silly registry.get cb [ 304,
+410 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+410 silly registry.get     server: 'Apache',
+410 silly registry.get     via: '1.1 varnish',
+410 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+410 silly registry.get     'cache-control': 'max-age=60',
+410 silly registry.get     etag: '"89BTWDCZ6UUTTX6GL9L0IKRTG"',
+410 silly registry.get     age: '11',
+410 silly registry.get     'x-served-by': 'cache-fra1244-FRA',
+410 silly registry.get     'x-cache': 'HIT',
+410 silly registry.get     'x-cache-hits': '1',
+410 silly registry.get     'x-timer': 'S1413933270.103683,VS0,VE0',
+410 silly registry.get     vary: 'Accept',
+410 silly registry.get     'content-length': '0',
+410 silly registry.get     'keep-alive': 'timeout=10, max=50',
+410 silly registry.get     connection: 'Keep-Alive' } ]
+411 verbose etag ansi-styles from cache
+412 silly addNameRange number 2 { name: 'ansi-styles',
+412 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+412 silly addNameRange   hasData: true }
+413 silly addNameRange versions [ 'ansi-styles',
+413 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.2.0', '1.0.0', '1.1.0' ] ]
+414 verbose addNamed [ 'ansi-styles', '1.1.0' ]
+415 verbose addNamed [ '1.1.0', '1.1.0' ]
+416 silly lockFile a78e767e-ansi-styles-1-1-0 ansi-styles@1.1.0
+417 verbose lock ansi-styles@1.1.0 C:\Users\admin\AppData\Roaming\npm-cache\a78e767e-ansi-styles-1-1-0.lock
+418 silly gunzTarPerm extractEntry bin/win32-ia32-v8-3.14/binding.node
+419 silly gunzTarPerm extractEntry bin/win32-x64-v8-3.14/binding.node
+420 http 304 https://registry.npmjs.org/strip-ansi
+421 silly registry.get cb [ 304,
+421 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+421 silly registry.get     server: 'Apache',
+421 silly registry.get     via: '1.1 varnish',
+421 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+421 silly registry.get     'cache-control': 'max-age=60',
+421 silly registry.get     etag: '"75LHXYTAYHSVGUDAKW4Q6NTZR"',
+421 silly registry.get     age: '11',
+421 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+421 silly registry.get     'x-cache': 'HIT',
+421 silly registry.get     'x-cache-hits': '1',
+421 silly registry.get     'x-timer': 'S1413933270.175936,VS0,VE0',
+421 silly registry.get     vary: 'Accept',
+421 silly registry.get     'content-length': '0',
+421 silly registry.get     'keep-alive': 'timeout=10, max=49',
+421 silly registry.get     connection: 'Keep-Alive' } ]
+422 verbose etag strip-ansi from cache
+423 http 304 https://registry.npmjs.org/setimmediate
+424 silly registry.get cb [ 304,
+424 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+424 silly registry.get     server: 'Apache',
+424 silly registry.get     via: '1.1 varnish',
+424 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+424 silly registry.get     'cache-control': 'max-age=60',
+424 silly registry.get     etag: '"67RS256CC2CVSN9BIJY282HCF"',
+424 silly registry.get     age: '43',
+424 silly registry.get     'x-served-by': 'cache-fra1221-FRA',
+424 silly registry.get     'x-cache': 'HIT',
+424 silly registry.get     'x-cache-hits': '1',
+424 silly registry.get     'x-timer': 'S1413933270.180343,VS0,VE0',
+424 silly registry.get     vary: 'Accept',
+424 silly registry.get     'content-length': '0',
+424 silly registry.get     'keep-alive': 'timeout=10, max=49',
+424 silly registry.get     connection: 'Keep-Alive' } ]
+425 verbose etag setimmediate from cache
+426 silly addNameRange number 2 { name: 'strip-ansi',
+426 silly addNameRange   range: '>=0.3.0-0 <0.4.0-0',
+426 silly addNameRange   hasData: true }
+427 silly addNameRange versions [ 'strip-ansi',
+427 silly addNameRange   [ '0.1.0',
+427 silly addNameRange     '0.1.1',
+427 silly addNameRange     '0.2.0',
+427 silly addNameRange     '0.2.1',
+427 silly addNameRange     '0.2.2',
+427 silly addNameRange     '0.3.0',
+427 silly addNameRange     '1.0.0',
+427 silly addNameRange     '2.0.0' ] ]
+428 verbose addNamed [ 'strip-ansi', '0.3.0' ]
+429 verbose addNamed [ '0.3.0', '0.3.0' ]
+430 silly lockFile 9d6f190c-strip-ansi-0-3-0 strip-ansi@0.3.0
+431 verbose lock strip-ansi@0.3.0 C:\Users\admin\AppData\Roaming\npm-cache\9d6f190c-strip-ansi-0-3-0.lock
+432 silly addNameRange number 2 { name: 'setimmediate',
+432 silly addNameRange   range: '>=1.0.2-0 <2.0.0-0',
+432 silly addNameRange   hasData: true }
+433 silly addNameRange versions [ 'setimmediate', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+434 verbose addNamed [ 'setimmediate', '1.0.2' ]
+435 verbose addNamed [ '1.0.2', '1.0.2' ]
+436 silly lockFile fd56a6a5-setimmediate-1-0-2 setimmediate@1.0.2
+437 verbose lock setimmediate@1.0.2 C:\Users\admin\AppData\Roaming\npm-cache\fd56a6a5-setimmediate-1-0-2.lock
+438 http 304 https://registry.npmjs.org/onetime
+439 silly registry.get cb [ 304,
+439 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+439 silly registry.get     server: 'Apache',
+439 silly registry.get     via: '1.1 varnish',
+439 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+439 silly registry.get     'cache-control': 'max-age=60',
+439 silly registry.get     etag: '"5TO5588I9YTKQB72017A1UGKS"',
+439 silly registry.get     age: '0',
+439 silly registry.get     'x-served-by': 'cache-fra1227-FRA',
+439 silly registry.get     'x-cache': 'HIT',
+439 silly registry.get     'x-cache-hits': '1',
+439 silly registry.get     'x-timer': 'S1413933270.099158,VS0,VE176',
+439 silly registry.get     vary: 'Accept',
+439 silly registry.get     'content-length': '0',
+439 silly registry.get     'keep-alive': 'timeout=10, max=50',
+439 silly registry.get     connection: 'Keep-Alive' } ]
+440 verbose etag onetime from cache
+441 silly addNameRange number 2 { name: 'onetime', range: '>=1.0.0-0 <2.0.0-0', hasData: true }
+442 silly addNameRange versions [ 'onetime', [ '0.1.0', '0.1.1', '1.0.0' ] ]
+443 verbose addNamed [ 'onetime', '1.0.0' ]
+444 verbose addNamed [ '1.0.0', '1.0.0' ]
+445 silly lockFile 7aedc42a-onetime-1-0-0 onetime@1.0.0
+446 verbose lock onetime@1.0.0 C:\Users\admin\AppData\Roaming\npm-cache\7aedc42a-onetime-1-0-0.lock
+447 silly lockFile dfbb87ff-has-ansi-0-1-0 has-ansi@0.1.0
+448 silly lockFile dfbb87ff-has-ansi-0-1-0 has-ansi@0.1.0
+449 silly lockFile 963ee3e8-escape-string-regexp-1-0-2 escape-string-regexp@1.0.2
+450 silly lockFile 963ee3e8-escape-string-regexp-1-0-2 escape-string-regexp@1.0.2
+451 silly lockFile 67e902d7-has-ansi-0-1-0 has-ansi@^0.1.0
+452 silly lockFile 67e902d7-has-ansi-0-1-0 has-ansi@^0.1.0
+453 silly lockFile 9f5f1582-escape-string-regexp-1-0-0 escape-string-regexp@^1.0.0
+454 silly lockFile 9f5f1582-escape-string-regexp-1-0-0 escape-string-regexp@^1.0.0
+455 silly lockFile a78e767e-ansi-styles-1-1-0 ansi-styles@1.1.0
+456 silly lockFile a78e767e-ansi-styles-1-1-0 ansi-styles@1.1.0
+457 silly lockFile 9d6f190c-strip-ansi-0-3-0 strip-ansi@0.3.0
+458 silly lockFile 9d6f190c-strip-ansi-0-3-0 strip-ansi@0.3.0
+459 silly lockFile f531fbfe-ansi-styles-1-1-0 ansi-styles@^1.1.0
+460 silly lockFile f531fbfe-ansi-styles-1-1-0 ansi-styles@^1.1.0
+461 silly lockFile 3a64cb31-strip-ansi-0-3-0 strip-ansi@^0.3.0
+462 silly lockFile 3a64cb31-strip-ansi-0-3-0 strip-ansi@^0.3.0
+463 silly lockFile bafa6883-supports-color-0-2-0 supports-color@0.2.0
+464 silly lockFile bafa6883-supports-color-0-2-0 supports-color@0.2.0
+465 silly lockFile e3aa172d-supports-color-0-2-0 supports-color@^0.2.0
+466 silly lockFile e3aa172d-supports-color-0-2-0 supports-color@^0.2.0
+467 silly lockFile fd56a6a5-setimmediate-1-0-2 setimmediate@1.0.2
+468 silly lockFile fd56a6a5-setimmediate-1-0-2 setimmediate@1.0.2
+469 silly lockFile 2d24dfe4-setimmediate-1-0-2 setimmediate@^1.0.2
+470 silly lockFile 2d24dfe4-setimmediate-1-0-2 setimmediate@^1.0.2
+471 silly lockFile 7aedc42a-onetime-1-0-0 onetime@1.0.0
+472 silly lockFile 7aedc42a-onetime-1-0-0 onetime@1.0.0
+473 silly lockFile d730972f-onetime-1-0-0 onetime@^1.0.0
+474 silly lockFile d730972f-onetime-1-0-0 onetime@^1.0.0
+475 silly resolved [ { name: 'escape-string-regexp',
+475 silly resolved     version: '1.0.2',
+475 silly resolved     description: 'Escape RegExp special characters',
+475 silly resolved     license: 'MIT',
+475 silly resolved     repository:
+475 silly resolved      { type: 'git',
+475 silly resolved        url: 'https://github.com/sindresorhus/escape-string-regexp' },
+475 silly resolved     author:
+475 silly resolved      { name: 'Sindre Sorhus',
+475 silly resolved        email: 'sindresorhus@gmail.com',
+475 silly resolved        url: 'http://sindresorhus.com' },
+475 silly resolved     engines: { node: '>=0.8.0' },
+475 silly resolved     scripts: { test: 'mocha' },
+475 silly resolved     files: [ 'index.js' ],
+475 silly resolved     keywords:
+475 silly resolved      [ 'regex',
+475 silly resolved        'regexp',
+475 silly resolved        're',
+475 silly resolved        'regular',
+475 silly resolved        'expression',
+475 silly resolved        'escape',
+475 silly resolved        'string',
+475 silly resolved        'str',
+475 silly resolved        'special',
+475 silly resolved        'characters' ],
+475 silly resolved     devDependencies: { mocha: '*' },
+475 silly resolved     gitHead: '0587ee0ee03ea3fcbfa3c15cf67b47f214e20987',
+475 silly resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+475 silly resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+475 silly resolved     _id: 'escape-string-regexp@1.0.2',
+475 silly resolved     _shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+475 silly resolved     _from: 'escape-string-regexp@^1.0.0',
+475 silly resolved     _npmVersion: '1.4.23',
+475 silly resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+475 silly resolved     maintainers: [ [Object], [Object] ],
+475 silly resolved     dist:
+475 silly resolved      { shasum: '4dbc2fe674e71949caf3fb2695ce7f2dc1d9a8d1',
+475 silly resolved        tarball: 'http://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.2.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' },
+475 silly resolved   { name: 'has-ansi',
+475 silly resolved     version: '0.1.0',
+475 silly resolved     description: 'Check if a string has ANSI escape codes',
+475 silly resolved     license: 'MIT',
+475 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/has-ansi' },
+475 silly resolved     bin: { 'has-ansi': 'cli.js' },
+475 silly resolved     author:
+475 silly resolved      { name: 'Sindre Sorhus',
+475 silly resolved        email: 'sindresorhus@gmail.com',
+475 silly resolved        url: 'http://sindresorhus.com' },
+475 silly resolved     engines: { node: '>=0.10.0' },
+475 silly resolved     scripts: { test: 'mocha' },
+475 silly resolved     files: [ 'index.js', 'cli.js' ],
+475 silly resolved     keywords:
+475 silly resolved      [ 'cli',
+475 silly resolved        'bin',
+475 silly resolved        'ansi',
+475 silly resolved        'styles',
+475 silly resolved        'color',
+475 silly resolved        'colour',
+475 silly resolved        'colors',
+475 silly resolved        'terminal',
+475 silly resolved        'console',
+475 silly resolved        'string',
+475 silly resolved        'tty',
+475 silly resolved        'escape',
+475 silly resolved        'shell',
+475 silly resolved        'xterm',
+475 silly resolved        'command-line',
+475 silly resolved        'text',
+475 silly resolved        'regex',
+475 silly resolved        'regexp',
+475 silly resolved        're',
+475 silly resolved        'match',
+475 silly resolved        'test',
+475 silly resolved        'find',
+475 silly resolved        'pattern',
+475 silly resolved        'has' ],
+475 silly resolved     dependencies: { 'ansi-regex': '^0.2.0' },
+475 silly resolved     devDependencies: { mocha: '*' },
+475 silly resolved     bugs: { url: 'https://github.com/sindresorhus/has-ansi/issues' },
+475 silly resolved     homepage: 'https://github.com/sindresorhus/has-ansi',
+475 silly resolved     _id: 'has-ansi@0.1.0',
+475 silly resolved     _shasum: '84f265aae8c0e6a88a12d7022894b7568894c62e',
+475 silly resolved     _from: 'has-ansi@^0.1.0',
+475 silly resolved     _npmVersion: '1.4.9',
+475 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+475 silly resolved     maintainers: [ [Object] ],
+475 silly resolved     dist:
+475 silly resolved      { shasum: '84f265aae8c0e6a88a12d7022894b7568894c62e',
+475 silly resolved        tarball: 'http://registry.npmjs.org/has-ansi/-/has-ansi-0.1.0.tgz' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/has-ansi/-/has-ansi-0.1.0.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' },
+475 silly resolved   { name: 'ansi-styles',
+475 silly resolved     version: '1.1.0',
+475 silly resolved     description: 'ANSI escape codes for styling strings in the terminal',
+475 silly resolved     license: 'MIT',
+475 silly resolved     repository:
+475 silly resolved      { type: 'git',
+475 silly resolved        url: 'git://github.com/sindresorhus/ansi-styles' },
+475 silly resolved     author:
+475 silly resolved      { name: 'Sindre Sorhus',
+475 silly resolved        email: 'sindresorhus@gmail.com',
+475 silly resolved        url: 'http://sindresorhus.com' },
+475 silly resolved     engines: { node: '>=0.10.0' },
+475 silly resolved     scripts: { test: 'mocha' },
+475 silly resolved     files: [ 'index.js' ],
+475 silly resolved     keywords:
+475 silly resolved      [ 'ansi',
+475 silly resolved        'styles',
+475 silly resolved        'color',
+475 silly resolved        'colour',
+475 silly resolved        'colors',
+475 silly resolved        'terminal',
+475 silly resolved        'console',
+475 silly resolved        'cli',
+475 silly resolved        'string',
+475 silly resolved        'tty',
+475 silly resolved        'escape',
+475 silly resolved        'formatting',
+475 silly resolved        'rgb',
+475 silly resolved        '256',
+475 silly resolved        'shell',
+475 silly resolved        'xterm',
+475 silly resolved        'log',
+475 silly resolved        'logging',
+475 silly resolved        'command-line',
+475 silly resolved        'text' ],
+475 silly resolved     devDependencies: { mocha: '*' },
+475 silly resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-styles/issues' },
+475 silly resolved     homepage: 'https://github.com/sindresorhus/ansi-styles',
+475 silly resolved     _id: 'ansi-styles@1.1.0',
+475 silly resolved     _shasum: 'eaecbf66cd706882760b2f4691582b8f55d7a7de',
+475 silly resolved     _from: 'ansi-styles@^1.1.0',
+475 silly resolved     _npmVersion: '1.4.9',
+475 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+475 silly resolved     maintainers: [ [Object] ],
+475 silly resolved     dist:
+475 silly resolved      { shasum: 'eaecbf66cd706882760b2f4691582b8f55d7a7de',
+475 silly resolved        tarball: 'http://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-1.1.0.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' },
+475 silly resolved   { name: 'strip-ansi',
+475 silly resolved     version: '0.3.0',
+475 silly resolved     description: 'Strip ANSI escape codes',
+475 silly resolved     license: 'MIT',
+475 silly resolved     bin: { 'strip-ansi': 'cli.js' },
+475 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/strip-ansi' },
+475 silly resolved     author:
+475 silly resolved      { name: 'Sindre Sorhus',
+475 silly resolved        email: 'sindresorhus@gmail.com',
+475 silly resolved        url: 'http://sindresorhus.com' },
+475 silly resolved     engines: { node: '>=0.10.0' },
+475 silly resolved     scripts: { test: 'mocha' },
+475 silly resolved     files: [ 'index.js', 'cli.js' ],
+475 silly resolved     keywords:
+475 silly resolved      [ 'strip',
+475 silly resolved        'trim',
+475 silly resolved        'remove',
+475 silly resolved        'ansi',
+475 silly resolved        'styles',
+475 silly resolved        'color',
+475 silly resolved        'colour',
+475 silly resolved        'colors',
+475 silly resolved        'terminal',
+475 silly resolved        'console',
+475 silly resolved        'cli',
+475 silly resolved        'string',
+475 silly resolved        'tty',
+475 silly resolved        'escape',
+475 silly resolved        'formatting',
+475 silly resolved        'rgb',
+475 silly resolved        '256',
+475 silly resolved        'shell',
+475 silly resolved        'xterm',
+475 silly resolved        'log',
+475 silly resolved        'logging',
+475 silly resolved        'command-line',
+475 silly resolved        'text' ],
+475 silly resolved     dependencies: { 'ansi-regex': '^0.2.1' },
+475 silly resolved     devDependencies: { mocha: '*' },
+475 silly resolved     bugs: { url: 'https://github.com/sindresorhus/strip-ansi/issues' },
+475 silly resolved     homepage: 'https://github.com/sindresorhus/strip-ansi',
+475 silly resolved     _id: 'strip-ansi@0.3.0',
+475 silly resolved     _shasum: '25f48ea22ca79187f3174a4db8759347bb126220',
+475 silly resolved     _from: 'strip-ansi@^0.3.0',
+475 silly resolved     _npmVersion: '1.4.9',
+475 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+475 silly resolved     maintainers: [ [Object] ],
+475 silly resolved     dist:
+475 silly resolved      { shasum: '25f48ea22ca79187f3174a4db8759347bb126220',
+475 silly resolved        tarball: 'http://registry.npmjs.org/strip-ansi/-/strip-ansi-0.3.0.tgz' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-0.3.0.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' },
+475 silly resolved   { name: 'supports-color',
+475 silly resolved     version: '0.2.0',
+475 silly resolved     description: 'Detect whether a terminal supports color',
+475 silly resolved     license: 'MIT',
+475 silly resolved     repository:
+475 silly resolved      { type: 'git',
+475 silly resolved        url: 'git://github.com/sindresorhus/supports-color' },
+475 silly resolved     bin: { 'supports-color': 'cli.js' },
+475 silly resolved     author:
+475 silly resolved      { name: 'Sindre Sorhus',
+475 silly resolved        email: 'sindresorhus@gmail.com',
+475 silly resolved        url: 'http://sindresorhus.com' },
+475 silly resolved     engines: { node: '>=0.10.0' },
+475 silly resolved     scripts: { test: 'mocha' },
+475 silly resolved     files: [ 'index.js', 'cli.js' ],
+475 silly resolved     keywords:
+475 silly resolved      [ 'cli',
+475 silly resolved        'bin',
+475 silly resolved        'color',
+475 silly resolved        'colour',
+475 silly resolved        'colors',
+475 silly resolved        'terminal',
+475 silly resolved        'console',
+475 silly resolved        'cli',
+475 silly resolved        'ansi',
+475 silly resolved        'styles',
+475 silly resolved        'tty',
+475 silly resolved        'rgb',
+475 silly resolved        '256',
+475 silly resolved        'shell',
+475 silly resolved        'xterm',
+475 silly resolved        'command-line',
+475 silly resolved        'support',
+475 silly resolved        'supports',
+475 silly resolved        'capability',
+475 silly resolved        'detect' ],
+475 silly resolved     devDependencies: { mocha: '*' },
+475 silly resolved     bugs: { url: 'https://github.com/sindresorhus/supports-color/issues' },
+475 silly resolved     homepage: 'https://github.com/sindresorhus/supports-color',
+475 silly resolved     _id: 'supports-color@0.2.0',
+475 silly resolved     _shasum: 'd92de2694eb3f67323973d7ae3d8b55b4c22190a',
+475 silly resolved     _from: 'supports-color@^0.2.0',
+475 silly resolved     _npmVersion: '1.4.9',
+475 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+475 silly resolved     maintainers: [ [Object] ],
+475 silly resolved     dist:
+475 silly resolved      { shasum: 'd92de2694eb3f67323973d7ae3d8b55b4c22190a',
+475 silly resolved        tarball: 'http://registry.npmjs.org/supports-color/-/supports-color-0.2.0.tgz' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/supports-color/-/supports-color-0.2.0.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' } ]
+476 info install escape-string-regexp@1.0.2 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+477 info install has-ansi@0.1.0 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+478 info install ansi-styles@1.1.0 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+479 info install strip-ansi@0.3.0 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+480 info install supports-color@0.2.0 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+481 info installOne escape-string-regexp@1.0.2
+482 info installOne has-ansi@0.1.0
+483 info installOne ansi-styles@1.1.0
+484 info installOne strip-ansi@0.3.0
+485 info installOne supports-color@0.2.0
+486 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp unbuild
+487 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi unbuild
+488 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles unbuild
+489 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi unbuild
+490 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color unbuild
+491 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\escape-string-regexp\1.0.2\package.tgz
+492 silly lockFile dd3ad278-ode-modules-escape-string-regexp tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp
+493 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp C:\Users\admin\AppData\Roaming\npm-cache\dd3ad278-ode-modules-escape-string-regexp.lock
+494 silly lockFile 8d7387d7--string-regexp-1-0-2-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\escape-string-regexp\1.0.2\package.tgz
+495 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\escape-string-regexp\1.0.2\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\8d7387d7--string-regexp-1-0-2-package-tgz.lock
+496 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\has-ansi\0.1.0\package.tgz
+497 silly lockFile 30e20bb8-ules-chalk-node-modules-has-ansi tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi
+498 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi C:\Users\admin\AppData\Roaming\npm-cache\30e20bb8-ules-chalk-node-modules-has-ansi.lock
+499 silly lockFile 740e74cc-cache-has-ansi-0-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\has-ansi\0.1.0\package.tgz
+500 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\has-ansi\0.1.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\740e74cc-cache-has-ansi-0-1-0-package-tgz.lock
+501 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\ansi-styles\1.1.0\package.tgz
+502 silly lockFile 9c717415-s-chalk-node-modules-ansi-styles tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles
+503 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles C:\Users\admin\AppData\Roaming\npm-cache\9c717415-s-chalk-node-modules-ansi-styles.lock
+504 silly lockFile 3685433b-he-ansi-styles-1-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-styles\1.1.0\package.tgz
+505 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-styles\1.1.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\3685433b-he-ansi-styles-1-1-0-package-tgz.lock
+506 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\strip-ansi\0.3.0\package.tgz
+507 silly lockFile b85738af-es-chalk-node-modules-strip-ansi tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi
+508 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi C:\Users\admin\AppData\Roaming\npm-cache\b85738af-es-chalk-node-modules-strip-ansi.lock
+509 silly lockFile 3b534305-che-strip-ansi-0-3-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\strip-ansi\0.3.0\package.tgz
+510 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\strip-ansi\0.3.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\3b534305-che-strip-ansi-0-3-0-package-tgz.lock
+511 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\supports-color\0.2.0\package.tgz
+512 silly lockFile 0a533ae8-halk-node-modules-supports-color tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color
+513 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color C:\Users\admin\AppData\Roaming\npm-cache\0a533ae8-halk-node-modules-supports-color.lock
+514 silly lockFile b42e3460-supports-color-0-2-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\supports-color\0.2.0\package.tgz
+515 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\supports-color\0.2.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\b42e3460-supports-color-0-2-0-package-tgz.lock
+516 silly resolved [ { name: 'setimmediate',
+516 silly resolved     description: 'A shim for the setImmediate efficient script yielding API',
+516 silly resolved     version: '1.0.2',
+516 silly resolved     author: { name: 'YuzuJS' },
+516 silly resolved     contributors: [ [Object], [Object], [Object] ],
+516 silly resolved     license: 'MIT',
+516 silly resolved     repository: { type: 'git', url: 'git://github.com/YuzuJS/setImmediate.git' },
+516 silly resolved     bugs: { url: 'https://github.com/YuzuJS/setImmediate/issues' },
+516 silly resolved     main: 'setImmediate.js',
+516 silly resolved     scripts:
+516 silly resolved      { lint: 'jshint setImmediate.js',
+516 silly resolved        test: 'mocha test/tests.js',
+516 silly resolved        'test-browser': 'opener http://localhost:9008/__zuul && zuul test/tests.js --ui mocha-bdd --local 9008',
+516 silly resolved        'test-browser-only': 'opener http://localhost:9007/test/browserOnly/index.html && http-server . -p 9007' },
+516 silly resolved     devDependencies:
+516 silly resolved      { jshint: '^2.5.0',
+516 silly resolved        mocha: '~1.18.2',
+516 silly resolved        'http-server': '~0.6.1',
+516 silly resolved        opener: '^1.3',
+516 silly resolved        zuul: '^1.6.4' },
+516 silly resolved     homepage: 'https://github.com/YuzuJS/setImmediate',
+516 silly resolved     _id: 'setimmediate@1.0.2',
+516 silly resolved     dist:
+516 silly resolved      { shasum: 'd8221c4fdfeb2561556c5184fa05fb7ce0af73bd',
+516 silly resolved        tarball: 'http://registry.npmjs.org/setimmediate/-/setimmediate-1.0.2.tgz' },
+516 silly resolved     _from: 'setimmediate@^1.0.2',
+516 silly resolved     _npmVersion: '1.4.3',
+516 silly resolved     _npmUser: { name: 'domenic', email: 'domenic@domenicdenicola.com' },
+516 silly resolved     maintainers: [ [Object] ],
+516 silly resolved     directories: {},
+516 silly resolved     _shasum: 'd8221c4fdfeb2561556c5184fa05fb7ce0af73bd',
+516 silly resolved     _resolved: 'https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.2.tgz',
+516 silly resolved     readme: 'ERROR: No README data found!' },
+516 silly resolved   { name: 'onetime',
+516 silly resolved     version: '1.0.0',
+516 silly resolved     description: 'Only call a function once. Unlike the module `once`, this one isn\'t naughty extending `Function.prototype`.',
+516 silly resolved     keywords: [ 'once', 'one', 'single', 'call', 'function', 'prevent' ],
+516 silly resolved     license: 'MIT',
+516 silly resolved     author:
+516 silly resolved      { name: 'Sindre Sorhus',
+516 silly resolved        email: 'sindresorhus@gmail.com',
+516 silly resolved        url: 'http://sindresorhus.com' },
+516 silly resolved     files: [ 'index.js' ],
+516 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/onetime' },
+516 silly resolved     scripts: { test: 'mocha' },
+516 silly resolved     devDependencies: { mocha: '*' },
+516 silly resolved     engines: { node: '>=0.10.0' },
+516 silly resolved     gitHead: 'a4aa1ce5291cc5f32ecb8f4b0a918b12cb47ea5e',
+516 silly resolved     bugs: { url: 'https://github.com/sindresorhus/onetime/issues' },
+516 silly resolved     homepage: 'https://github.com/sindresorhus/onetime',
+516 silly resolved     _id: 'onetime@1.0.0',
+516 silly resolved     _shasum: '3a08a8e39d7816df52d34886374fb8ed8b651f62',
+516 silly resolved     _from: 'onetime@^1.0.0',
+516 silly resolved     _npmVersion: '1.4.14',
+516 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+516 silly resolved     maintainers: [ [Object] ],
+516 silly resolved     dist:
+516 silly resolved      { shasum: '3a08a8e39d7816df52d34886374fb8ed8b651f62',
+516 silly resolved        tarball: 'http://registry.npmjs.org/onetime/-/onetime-1.0.0.tgz' },
+516 silly resolved     directories: {},
+516 silly resolved     _resolved: 'https://registry.npmjs.org/onetime/-/onetime-1.0.0.tgz',
+516 silly resolved     readme: 'ERROR: No README data found!' } ]
+517 info install setimmediate@1.0.2 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+518 info install onetime@1.0.0 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+519 info installOne setimmediate@1.0.2
+520 info installOne onetime@1.0.0
+521 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate unbuild
+522 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime unbuild
+523 silly gunzTarPerm modes [ '755', '644' ]
+524 silly gunzTarPerm modes [ '755', '644' ]
+525 silly gunzTarPerm modes [ '755', '644' ]
+526 silly gunzTarPerm modes [ '755', '644' ]
+527 silly gunzTarPerm modes [ '755', '644' ]
+528 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\setimmediate\1.0.2\package.tgz
+529 silly lockFile 70940fb6--async-node-modules-setimmediate tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate
+530 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate C:\Users\admin\AppData\Roaming\npm-cache\70940fb6--async-node-modules-setimmediate.lock
+531 silly lockFile efe08fb1-e-setimmediate-1-0-2-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\setimmediate\1.0.2\package.tgz
+532 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\setimmediate\1.0.2\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\efe08fb1-e-setimmediate-1-0-2-package-tgz.lock
+533 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\onetime\1.0.0\package.tgz
+534 silly lockFile 34391be0--each-async-node-modules-onetime tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime
+535 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime C:\Users\admin\AppData\Roaming\npm-cache\34391be0--each-async-node-modules-onetime.lock
+536 silly lockFile d46a86db--cache-onetime-1-0-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\onetime\1.0.0\package.tgz
+537 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\onetime\1.0.0\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\d46a86db--cache-onetime-1-0-0-package-tgz.lock
+538 silly gunzTarPerm modes [ '755', '644' ]
+539 silly gunzTarPerm modes [ '755', '644' ]
+540 silly gunzTarPerm extractEntry package.json
+541 silly gunzTarPerm extractEntry package.json
+542 silly gunzTarPerm extractEntry index.js
+543 silly gunzTarPerm extractEntry readme.md
+544 silly gunzTarPerm extractEntry cli.js
+545 silly gunzTarPerm extractEntry index.js
+546 silly gunzTarPerm extractEntry package.json
+547 silly gunzTarPerm extractEntry package.json
+548 silly gunzTarPerm extractEntry index.js
+549 silly gunzTarPerm extractEntry readme.md
+550 silly gunzTarPerm extractEntry cli.js
+551 silly gunzTarPerm extractEntry index.js
+552 silly gunzTarPerm extractEntry package.json
+553 silly gunzTarPerm extractEntry readme.md
+554 silly gunzTarPerm extractEntry cli.js
+555 silly gunzTarPerm extractEntry index.js
+556 silly gunzTarPerm extractEntry readme.md
+557 silly gunzTarPerm extractEntry readme.md
+558 silly gunzTarPerm extractEntry package.json
+559 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+560 silly gunzTarPerm extractEntry package.json
+561 silly gunzTarPerm extractEntry index.js
+562 silly gunzTarPerm extractEntry readme.md
+563 silly gunzTarPerm extractEntry README.md
+564 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+565 silly gunzTarPerm extractEntry setImmediate.js
+566 silly gunzTarPerm modified mode [ 'setImmediate.js', 438, 420 ]
+567 silly lockFile dd3ad278-ode-modules-escape-string-regexp tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp
+568 silly lockFile dd3ad278-ode-modules-escape-string-regexp tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp
+569 silly lockFile 8d7387d7--string-regexp-1-0-2-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\escape-string-regexp\1.0.2\package.tgz
+570 silly lockFile 8d7387d7--string-regexp-1-0-2-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\escape-string-regexp\1.0.2\package.tgz
+571 silly gunzTarPerm extractEntry LICENSE.txt
+572 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 420 ]
+573 info preinstall escape-string-regexp@1.0.2
+574 verbose readDependencies using package.json deps
+575 verbose readDependencies using package.json deps
+576 silly resolved []
+577 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp
+578 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\escape-string-regexp
+579 verbose linkStuff [ false,
+579 verbose linkStuff   false,
+579 verbose linkStuff   false,
+579 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules' ]
+580 info linkStuff escape-string-regexp@1.0.2
+581 verbose linkBins escape-string-regexp@1.0.2
+582 verbose linkMans escape-string-regexp@1.0.2
+583 verbose rebuildBundles escape-string-regexp@1.0.2
+584 info install escape-string-regexp@1.0.2
+585 info postinstall escape-string-regexp@1.0.2
+586 silly lockFile 9c717415-s-chalk-node-modules-ansi-styles tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles
+587 silly lockFile 9c717415-s-chalk-node-modules-ansi-styles tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles
+588 silly lockFile 3685433b-he-ansi-styles-1-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-styles\1.1.0\package.tgz
+589 silly lockFile 3685433b-he-ansi-styles-1-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-styles\1.1.0\package.tgz
+590 silly lockFile 30e20bb8-ules-chalk-node-modules-has-ansi tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi
+591 silly lockFile 30e20bb8-ules-chalk-node-modules-has-ansi tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi
+592 silly lockFile b85738af-es-chalk-node-modules-strip-ansi tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi
+593 silly lockFile b85738af-es-chalk-node-modules-strip-ansi tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi
+594 silly lockFile 740e74cc-cache-has-ansi-0-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\has-ansi\0.1.0\package.tgz
+595 silly lockFile 740e74cc-cache-has-ansi-0-1-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\has-ansi\0.1.0\package.tgz
+596 info preinstall ansi-styles@1.1.0
+597 silly lockFile 3b534305-che-strip-ansi-0-3-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\strip-ansi\0.3.0\package.tgz
+598 silly lockFile 3b534305-che-strip-ansi-0-3-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\strip-ansi\0.3.0\package.tgz
+599 verbose readDependencies using package.json deps
+600 info preinstall has-ansi@0.1.0
+601 verbose readDependencies using package.json deps
+602 silly resolved []
+603 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles
+604 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\ansi-styles
+605 verbose linkStuff [ false,
+605 verbose linkStuff   false,
+605 verbose linkStuff   false,
+605 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules' ]
+606 info linkStuff ansi-styles@1.1.0
+607 verbose linkBins ansi-styles@1.1.0
+608 verbose linkMans ansi-styles@1.1.0
+609 verbose rebuildBundles ansi-styles@1.1.0
+610 silly lockFile 0a533ae8-halk-node-modules-supports-color tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color
+611 silly lockFile 0a533ae8-halk-node-modules-supports-color tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color
+612 info preinstall strip-ansi@0.3.0
+613 info install ansi-styles@1.1.0
+614 silly lockFile b42e3460-supports-color-0-2-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\supports-color\0.2.0\package.tgz
+615 silly lockFile b42e3460-supports-color-0-2-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\supports-color\0.2.0\package.tgz
+616 verbose readDependencies using package.json deps
+617 info postinstall ansi-styles@1.1.0
+618 silly lockFile 34391be0--each-async-node-modules-onetime tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime
+619 silly lockFile 34391be0--each-async-node-modules-onetime tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime
+620 verbose readDependencies using package.json deps
+621 verbose readDependencies using package.json deps
+622 silly lockFile d46a86db--cache-onetime-1-0-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\onetime\1.0.0\package.tgz
+623 silly lockFile d46a86db--cache-onetime-1-0-0-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\onetime\1.0.0\package.tgz
+624 verbose readDependencies using package.json deps
+625 info preinstall supports-color@0.2.0
+626 info preinstall onetime@1.0.0
+627 verbose cache add [ 'ansi-regex@^0.2.0', null ]
+628 verbose cache add name=undefined spec="ansi-regex@^0.2.0" args=["ansi-regex@^0.2.0",null]
+629 verbose parsed url { protocol: null,
+629 verbose parsed url   slashes: null,
+629 verbose parsed url   auth: null,
+629 verbose parsed url   host: null,
+629 verbose parsed url   port: null,
+629 verbose parsed url   hostname: null,
+629 verbose parsed url   hash: null,
+629 verbose parsed url   search: null,
+629 verbose parsed url   query: null,
+629 verbose parsed url   pathname: 'ansi-regex@^0.2.0',
+629 verbose parsed url   path: 'ansi-regex@^0.2.0',
+629 verbose parsed url   href: 'ansi-regex@^0.2.0' }
+630 verbose cache add [ 'ansi-regex@^0.2.1', null ]
+631 verbose cache add name=undefined spec="ansi-regex@^0.2.1" args=["ansi-regex@^0.2.1",null]
+632 verbose parsed url { protocol: null,
+632 verbose parsed url   slashes: null,
+632 verbose parsed url   auth: null,
+632 verbose parsed url   host: null,
+632 verbose parsed url   port: null,
+632 verbose parsed url   hostname: null,
+632 verbose parsed url   hash: null,
+632 verbose parsed url   search: null,
+632 verbose parsed url   query: null,
+632 verbose parsed url   pathname: 'ansi-regex@^0.2.1',
+632 verbose parsed url   path: 'ansi-regex@^0.2.1',
+632 verbose parsed url   href: 'ansi-regex@^0.2.1' }
+633 verbose cache add name="ansi-regex" spec="^0.2.0" args=["ansi-regex","^0.2.0"]
+634 verbose parsed url { protocol: null,
+634 verbose parsed url   slashes: null,
+634 verbose parsed url   auth: null,
+634 verbose parsed url   host: null,
+634 verbose parsed url   port: null,
+634 verbose parsed url   hostname: null,
+634 verbose parsed url   hash: null,
+634 verbose parsed url   search: null,
+634 verbose parsed url   query: null,
+634 verbose parsed url   pathname: '^0.2.0',
+634 verbose parsed url   path: '^0.2.0',
+634 verbose parsed url   href: '^0.2.0' }
+635 verbose addNamed [ 'ansi-regex', '^0.2.0' ]
+636 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+637 silly lockFile 43ef5ea3-ansi-regex-0-2-0 ansi-regex@^0.2.0
+638 verbose lock ansi-regex@^0.2.0 C:\Users\admin\AppData\Roaming\npm-cache\43ef5ea3-ansi-regex-0-2-0.lock
+639 verbose cache add name="ansi-regex" spec="^0.2.1" args=["ansi-regex","^0.2.1"]
+640 verbose parsed url { protocol: null,
+640 verbose parsed url   slashes: null,
+640 verbose parsed url   auth: null,
+640 verbose parsed url   host: null,
+640 verbose parsed url   port: null,
+640 verbose parsed url   hostname: null,
+640 verbose parsed url   hash: null,
+640 verbose parsed url   search: null,
+640 verbose parsed url   query: null,
+640 verbose parsed url   pathname: '^0.2.1',
+640 verbose parsed url   path: '^0.2.1',
+640 verbose parsed url   href: '^0.2.1' }
+641 verbose addNamed [ 'ansi-regex', '^0.2.1' ]
+642 verbose addNamed [ null, '>=0.2.1-0 <0.3.0-0' ]
+643 silly lockFile da0e7ec5-ansi-regex-0-2-1 ansi-regex@^0.2.1
+644 verbose lock ansi-regex@^0.2.1 C:\Users\admin\AppData\Roaming\npm-cache\da0e7ec5-ansi-regex-0-2-1.lock
+645 verbose readDependencies using package.json deps
+646 verbose readDependencies using package.json deps
+647 verbose readDependencies using package.json deps
+648 silly resolved []
+649 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color
+650 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\supports-color
+651 verbose linkStuff [ false,
+651 verbose linkStuff   false,
+651 verbose linkStuff   false,
+651 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules' ]
+652 info linkStuff supports-color@0.2.0
+653 verbose linkBins supports-color@0.2.0
+654 verbose link bins [ { 'supports-color': 'cli.js' },
+654 verbose link bins   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules\\.bin',
+654 verbose link bins   false ]
+655 verbose linkMans supports-color@0.2.0
+656 verbose rebuildBundles supports-color@0.2.0
+657 verbose readDependencies using package.json deps
+658 silly resolved []
+659 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime
+660 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\onetime
+661 verbose linkStuff [ false,
+661 verbose linkStuff   false,
+661 verbose linkStuff   false,
+661 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\each-async\\node_modules' ]
+662 info linkStuff onetime@1.0.0
+663 verbose linkBins onetime@1.0.0
+664 verbose linkMans onetime@1.0.0
+665 verbose rebuildBundles onetime@1.0.0
+666 silly addNameRange { name: 'ansi-regex',
+666 silly addNameRange   range: '>=0.2.1-0 <0.3.0-0',
+666 silly addNameRange   hasData: false }
+667 silly addNameRange { name: 'ansi-regex',
+667 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+667 silly addNameRange   hasData: false }
+668 info install onetime@1.0.0
+669 info postinstall onetime@1.0.0
+670 info install supports-color@0.2.0
+671 info postinstall supports-color@0.2.0
+672 silly lockFile 70940fb6--async-node-modules-setimmediate tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate
+673 silly lockFile 70940fb6--async-node-modules-setimmediate tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate
+674 silly lockFile efe08fb1-e-setimmediate-1-0-2-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\setimmediate\1.0.2\package.tgz
+675 silly lockFile efe08fb1-e-setimmediate-1-0-2-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\setimmediate\1.0.2\package.tgz
+676 verbose url raw ansi-regex
+677 verbose url resolving [ 'https://registry.npmjs.org/', './ansi-regex' ]
+678 verbose url resolved https://registry.npmjs.org/ansi-regex
+679 info trying registry request attempt 1 at 01:14:28
+680 verbose etag "1TB4RGXG7X6L6SJ5IOC34HPO9"
+681 http GET https://registry.npmjs.org/ansi-regex
+682 verbose url raw ansi-regex
+683 verbose url resolving [ 'https://registry.npmjs.org/', './ansi-regex' ]
+684 verbose url resolved https://registry.npmjs.org/ansi-regex
+685 info trying registry request attempt 1 at 01:14:28
+686 verbose etag "1TB4RGXG7X6L6SJ5IOC34HPO9"
+687 http GET https://registry.npmjs.org/ansi-regex
+688 info preinstall setimmediate@1.0.2
+689 silly gunzTarPerm extractEntry .gitmodules
+690 verbose readDependencies using package.json deps
+691 verbose readDependencies using package.json deps
+692 silly resolved []
+693 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate
+694 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async\node_modules\setimmediate
+695 verbose linkStuff [ false,
+695 verbose linkStuff   false,
+695 verbose linkStuff   false,
+695 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\each-async\\node_modules' ]
+696 info linkStuff setimmediate@1.0.2
+697 verbose linkBins setimmediate@1.0.2
+698 verbose linkMans setimmediate@1.0.2
+699 verbose rebuildBundles setimmediate@1.0.2
+700 info install setimmediate@1.0.2
+701 info postinstall setimmediate@1.0.2
+702 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+703 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\each-async
+704 verbose linkStuff [ false,
+704 verbose linkStuff   false,
+704 verbose linkStuff   false,
+704 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules' ]
+705 info linkStuff each-async@1.1.0
+706 verbose linkBins each-async@1.1.0
+707 verbose linkMans each-async@1.1.0
+708 verbose rebuildBundles each-async@1.1.0
+709 verbose rebuildBundles [ 'onetime', 'setimmediate' ]
+710 info install each-async@1.1.0
+711 info postinstall each-async@1.1.0
+712 http 304 https://registry.npmjs.org/ansi-regex
+713 silly registry.get cb [ 304,
+713 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+713 silly registry.get     server: 'Apache',
+713 silly registry.get     via: '1.1 varnish',
+713 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:30 GMT',
+713 silly registry.get     'cache-control': 'max-age=60',
+713 silly registry.get     etag: '"1TB4RGXG7X6L6SJ5IOC34HPO9"',
+713 silly registry.get     age: '46',
+713 silly registry.get     'x-served-by': 'cache-fra1231-FRA',
+713 silly registry.get     'x-cache': 'HIT',
+713 silly registry.get     'x-cache-hits': '1',
+713 silly registry.get     'x-timer': 'S1413933270.897166,VS0,VE0',
+713 silly registry.get     vary: 'Accept',
+713 silly registry.get     'content-length': '0',
+713 silly registry.get     'keep-alive': 'timeout=10, max=50',
+713 silly registry.get     connection: 'Keep-Alive' } ]
+714 verbose etag ansi-regex from cache
+715 http 304 https://registry.npmjs.org/ansi-regex
+716 silly registry.get cb [ 304,
+716 silly registry.get   { date: 'Tue, 21 Oct 2014 23:14:30 GMT',
+716 silly registry.get     server: 'Apache',
+716 silly registry.get     via: '1.1 varnish',
+716 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 23:14:28 GMT',
+716 silly registry.get     'cache-control': 'max-age=60',
+716 silly registry.get     etag: '"1TB4RGXG7X6L6SJ5IOC34HPO9"',
+716 silly registry.get     age: '45',
+716 silly registry.get     'x-served-by': 'cache-fra1236-FRA',
+716 silly registry.get     'x-cache': 'HIT',
+716 silly registry.get     'x-cache-hits': '2',
+716 silly registry.get     'x-timer': 'S1413933270.900643,VS0,VE0',
+716 silly registry.get     vary: 'Accept',
+716 silly registry.get     'content-length': '0',
+716 silly registry.get     'keep-alive': 'timeout=10, max=50',
+716 silly registry.get     connection: 'Keep-Alive' } ]
+717 verbose etag ansi-regex from cache
+718 silly addNameRange number 2 { name: 'ansi-regex',
+718 silly addNameRange   range: '>=0.2.1-0 <0.3.0-0',
+718 silly addNameRange   hasData: true }
+719 silly addNameRange versions [ 'ansi-regex',
+719 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '1.0.0', '1.1.0' ] ]
+720 verbose addNamed [ 'ansi-regex', '0.2.1' ]
+721 verbose addNamed [ '0.2.1', '0.2.1' ]
+722 silly lockFile 67db7279-ansi-regex-0-2-1 ansi-regex@0.2.1
+723 verbose lock ansi-regex@0.2.1 C:\Users\admin\AppData\Roaming\npm-cache\67db7279-ansi-regex-0-2-1.lock
+724 silly addNameRange number 2 { name: 'ansi-regex',
+724 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+724 silly addNameRange   hasData: true }
+725 silly addNameRange versions [ 'ansi-regex',
+725 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '1.0.0', '1.1.0' ] ]
+726 verbose addNamed [ 'ansi-regex', '0.2.1' ]
+727 silly lockFile 67db7279-ansi-regex-0-2-1 ansi-regex@0.2.1
+728 silly lockFile 67db7279-ansi-regex-0-2-1 ansi-regex@0.2.1
+729 silly lockFile da0e7ec5-ansi-regex-0-2-1 ansi-regex@^0.2.1
+730 silly lockFile da0e7ec5-ansi-regex-0-2-1 ansi-regex@^0.2.1
+731 silly lockFile 43ef5ea3-ansi-regex-0-2-0 ansi-regex@^0.2.0
+732 silly lockFile 43ef5ea3-ansi-regex-0-2-0 ansi-regex@^0.2.0
+733 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi
+734 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\has-ansi unbuild
+735 info preuninstall has-ansi@0.1.0
+736 info uninstall has-ansi@0.1.0
+737 verbose false,D:\wamp\www\pogradec\node_modules,D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules unbuild has-ansi@0.1.0
+738 verbose D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\.bin,[object Object] binRoot
+739 info postuninstall has-ansi@0.1.0
+740 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk
+741 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk unbuild
+742 info preuninstall chalk@0.5.1
+743 info uninstall chalk@0.5.1
+744 verbose false,D:\wamp\www\pogradec\node_modules,D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules unbuild chalk@0.5.1
+745 info postuninstall chalk@0.5.1
+746 silly resolved [ { name: 'ansi-regex',
+746 silly resolved     version: '0.2.1',
+746 silly resolved     description: 'Regular expression for matching ANSI escape codes',
+746 silly resolved     license: 'MIT',
+746 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/ansi-regex' },
+746 silly resolved     author:
+746 silly resolved      { name: 'Sindre Sorhus',
+746 silly resolved        email: 'sindresorhus@gmail.com',
+746 silly resolved        url: 'http://sindresorhus.com' },
+746 silly resolved     engines: { node: '>=0.10.0' },
+746 silly resolved     scripts: { test: 'mocha' },
+746 silly resolved     files: [ 'index.js' ],
+746 silly resolved     keywords:
+746 silly resolved      [ 'ansi',
+746 silly resolved        'styles',
+746 silly resolved        'color',
+746 silly resolved        'colour',
+746 silly resolved        'colors',
+746 silly resolved        'terminal',
+746 silly resolved        'console',
+746 silly resolved        'cli',
+746 silly resolved        'string',
+746 silly resolved        'tty',
+746 silly resolved        'escape',
+746 silly resolved        'formatting',
+746 silly resolved        'rgb',
+746 silly resolved        '256',
+746 silly resolved        'shell',
+746 silly resolved        'xterm',
+746 silly resolved        'command-line',
+746 silly resolved        'text',
+746 silly resolved        'regex',
+746 silly resolved        'regexp',
+746 silly resolved        're',
+746 silly resolved        'match',
+746 silly resolved        'test',
+746 silly resolved        'find',
+746 silly resolved        'pattern' ],
+746 silly resolved     devDependencies: { mocha: '*' },
+746 silly resolved     bugs: { url: 'https://github.com/sindresorhus/ansi-regex/issues' },
+746 silly resolved     homepage: 'https://github.com/sindresorhus/ansi-regex',
+746 silly resolved     _id: 'ansi-regex@0.2.1',
+746 silly resolved     _shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+746 silly resolved     _from: 'ansi-regex@^0.2.0',
+746 silly resolved     _npmVersion: '1.4.9',
+746 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+746 silly resolved     maintainers: [ [Object] ],
+746 silly resolved     dist:
+746 silly resolved      { shasum: '0d8e946967a3d8143f93e24e298525fc1b2235f9',
+746 silly resolved        tarball: 'http://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz' },
+746 silly resolved     directories: {},
+746 silly resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-0.2.1.tgz',
+746 silly resolved     readme: 'ERROR: No README data found!' } ]
+747 info install ansi-regex@0.2.1 into D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi
+748 info installOne ansi-regex@0.2.1
+749 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex unbuild
+750 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass
+751 info D:\wamp\www\pogradec\node_modules\grunt-sass unbuild
+752 info preuninstall grunt-sass@0.16.0
+753 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\ansi-regex\0.2.1\package.tgz
+754 silly lockFile 9fa7bc08-rip-ansi-node-modules-ansi-regex tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+755 verbose lock tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex C:\Users\admin\AppData\Roaming\npm-cache\9fa7bc08-rip-ansi-node-modules-ansi-regex.lock
+756 silly lockFile 58854395-che-ansi-regex-0-2-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-regex\0.2.1\package.tgz
+757 verbose lock tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-regex\0.2.1\package.tgz C:\Users\admin\AppData\Roaming\npm-cache\58854395-che-ansi-regex-0-2-1-package-tgz.lock
+758 info uninstall grunt-sass@0.16.0
+759 verbose true,D:\wamp\www\pogradec\node_modules,D:\wamp\www\pogradec\node_modules unbuild grunt-sass@0.16.0
+760 info postuninstall grunt-sass@0.16.0
+761 silly gunzTarPerm modes [ '755', '644' ]
+762 silly gunzTarPerm extractEntry package.json
+763 silly gunzTarPerm extractEntry index.js
+764 silly gunzTarPerm extractEntry readme.md
+765 silly lockFile 9fa7bc08-rip-ansi-node-modules-ansi-regex tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+766 silly lockFile 9fa7bc08-rip-ansi-node-modules-ansi-regex tar://D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+767 silly lockFile 58854395-che-ansi-regex-0-2-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-regex\0.2.1\package.tgz
+768 silly lockFile 58854395-che-ansi-regex-0-2-1-package-tgz tar://C:\Users\admin\AppData\Roaming\npm-cache\ansi-regex\0.2.1\package.tgz
+769 info preinstall ansi-regex@0.2.1
+770 verbose readDependencies using package.json deps
+771 verbose readDependencies using package.json deps
+772 silly resolved []
+773 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+774 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi\node_modules\ansi-regex
+775 verbose linkStuff [ false,
+775 verbose linkStuff   false,
+775 verbose linkStuff   false,
+775 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules\\strip-ansi\\node_modules' ]
+776 info linkStuff ansi-regex@0.2.1
+777 verbose linkBins ansi-regex@0.2.1
+778 verbose linkMans ansi-regex@0.2.1
+779 verbose rebuildBundles ansi-regex@0.2.1
+780 info install ansi-regex@0.2.1
+781 info postinstall ansi-regex@0.2.1
+782 verbose about to build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi
+783 info build D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi
+784 verbose linkStuff [ false,
+784 verbose linkStuff   false,
+784 verbose linkStuff   false,
+784 verbose linkStuff   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules' ]
+785 info linkStuff strip-ansi@0.3.0
+786 verbose linkBins strip-ansi@0.3.0
+787 verbose link bins [ { 'strip-ansi': 'cli.js' },
+787 verbose link bins   'D:\\wamp\\www\\pogradec\\node_modules\\grunt-sass\\node_modules\\chalk\\node_modules\\.bin',
+787 verbose link bins   false ]
+788 verbose linkMans strip-ansi@0.3.0
+789 verbose rebuildBundles strip-ansi@0.3.0
+790 info D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\strip-ansi unbuild
+791 info preuninstall strip-ansi@0.3.0
+792 verbose rebuildBundles [ 'ansi-regex' ]
+793 info uninstall strip-ansi@0.3.0
+794 verbose false,D:\wamp\www\pogradec\node_modules,D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules unbuild strip-ansi@0.3.0
+795 verbose D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\chalk\node_modules\.bin,[object Object] binRoot
+796 info postuninstall strip-ansi@0.3.0
+797 error Error: ENOENT, chmod 'D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\node-sass\bin\win32-ia32-v8-3.14'
+798 error If you need help, you may report this *entire* log,
+798 error including the npm and node versions, at:
+798 error     <http://github.com/npm/npm/issues>
+799 error System Windows_NT 6.1.7600
+800 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+801 error cwd D:\wamp\www\pogradec
+802 error node -v v0.10.29
+803 error npm -v 1.4.14
+804 error path D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\node-sass\bin\win32-ia32-v8-3.14
+805 error fstream_path D:\wamp\www\pogradec\node_modules\grunt-sass\node_modules\node-sass\bin\win32-ia32-v8-3.14\binding.node
+806 error fstream_type File
+807 error fstream_class FileWriter
+808 error fstream_finish_call setupMadeDir
+809 error code ENOENT
+810 error errno 34
+811 error fstream_stack end (C:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\writer.js:319:21)
+811 error fstream_stack C:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\writer.js:336:20
+811 error fstream_stack next (C:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\writer.js:366:20)
+811 error fstream_stack Object.oncomplete (fs.js:107:15)
+812 verbose exit [ 34, true ]

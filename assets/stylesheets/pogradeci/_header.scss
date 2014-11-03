@@ -1,0 +1,19 @@
+#header{
+	height:40px;
+	position: fixed; top: 0px; left:40px; right: 0px; background: #fff; z-index: 101;
+	@include box-shadow(2px, 2px, 5px, rgba(0,0,0,.4)); 
+	@include min-screen($screen-sm-min) {
+		 position: absolute; left:60px; height:60px;
+		 background: none;
+		 box-shadow: none;
+	}
+}
+#logo{
+	width: 153px; height: 40px; 
+	position: absolute; top: 0px; left:5px;
+	background: #fff url($sprite-url) -330px 5px no-repeat;
+	@include min-screen($screen-sm-min) {
+		width: 306px; height: 60px; left: 0; padding-left: 5px;
+		background-position: 0 0;
+	}
+}

@@ -1,0 +1,95 @@
+.menu-btn-cat, .menu-btn-map, .menu-btn-user{
+	display: block; width: 100%; height: 100%;
+	background: #fff url($sprite-url) 0px 0px no-repeat;
+}
+.menu-btn-cat{
+	background-position: -180px -60px;
+	@include min-screen($screen-sm-min) {
+		background-position: 0 -60px;
+	}
+}
+.menu-btn-map{
+	background-position: -220px -60px;
+	@include min-screen($screen-sm-min) {
+		background-position: -60px -60px;
+	}
+}
+.menu-btn-user{
+	background-position: -260px -60px;
+	@include min-screen($screen-sm-min) {
+		background-position: -120px -60px;
+	}
+}
+
+.icon-cat-home,
+.icon-cat-hotel-rest,
+.icon-cat-rest,
+.icon-cat-boat-service,
+.icon-cat-hiking,
+.icon-cat-inhouse, 
+.icon-cat-handmade, 
+.icon-cat-take-away, 
+.icon-cat-tour-travel, 
+.icon-cat-transport, 
+.icon-cat-water-sport, 
+.icon-cat-events, 
+.icon-cat-institution, 
+.icon-cat-guide, 
+.icon-cat-art, 
+.icon-cat-street-art, 
+.icon-cat-nature{
+	display: block; width: 40px; height: 40px;
+	background: url($sprite-url) 0px 0px no-repeat;
+}
+
+.icon-cat-home{
+	background-position: 0px -130px;
+}
+.icon-cat-hotel-rest{
+	background-position: -40px -130px;
+}
+.icon-cat-rest{
+	background-position: -80px -130px;
+}
+.icon-cat-boat-service{
+	background-position: -120px -130px;
+}
+.icon-cat-hiking{
+	background-position: -160px -130px;
+}
+.icon-cat-inhouse{
+	background-position: -200px -130px;
+} 
+.icon-cat-handmade{
+	background-position: -240px -130px;
+} 
+.icon-cat-take-away{
+	background-position: -280px -130px;
+} 
+.icon-cat-tour-travel{
+	background-position: -320px -130px;
+} 
+.icon-cat-transport{
+	background-position: -360px -130px;
+} 
+.icon-cat-water-sport{
+	background-position: -400px -130px;
+} 
+.icon-cat-events{
+	background-position: -440px -130px;
+} 
+.icon-cat-institution{
+	background-position: -480px -130px;
+} 
+.icon-cat-guide{
+	background-position: -520px -130px;
+} 
+.icon-cat-art{
+	background-position: -560px -130px;
+} 
+.icon-cat-street-art{
+	background-position: -600px -130px;
+} 
+.icon-cat-nature{
+	background-position: -640px -130px;
+}

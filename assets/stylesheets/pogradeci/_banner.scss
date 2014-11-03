@@ -1,0 +1,23 @@
+#banner{
+	position: relative; height: 127px; overflow: hidden;
+	margin-left: -30px; margin-right: -15px; margin-top: 40px;
+	img{
+		width: 100%; height: auto; display:block;
+	}
+
+	.banner-slideshow{
+	}
+	.cycle-controls{
+		position: absolute; bottom: 15px; right: 15px; z-index: 999999;
+		.cycle-prev, .cycle-next{
+			background: url($sprite-url) -330px -60px no-repeat;
+			display: inline-block; width: 44px; height:44px;
+		}
+		.cycle-next{
+			background-position: -377px -60px;
+		}
+	}
+	@include min-screen($screen-sm-min) {
+		margin-top: 0; height: auto;
+	}
+}

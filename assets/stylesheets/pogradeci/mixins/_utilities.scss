@@ -1,0 +1,11 @@
+@mixin apply-sprite() {
+  background-image: $sprite-url;
+}
+
+/**
+ *   Utility for PX to EM conversion
+ */
+@function em($target, $context: $font-size-base) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}

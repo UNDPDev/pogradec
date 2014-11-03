@@ -7,10 +7,10 @@
 	$wmenu = new web_menu();
 	
 	$q="";if(isset($_REQUEST["q"])) $q = addslashes($_REQUEST["q"]);
-	$class="";if(isset($_REQUEST["class"])) $class = addslashes($_REQUEST["class"]);
+	$menu_class="";if(isset($_REQUEST["menu_class"])) $menu_class = addslashes($_REQUEST["menu_class"]);
 	$p="0";if(isset($_REQUEST["p"])) $p = addslashes($_REQUEST["p"]);
 	$o="0";if(isset($_REQUEST["o"])) $o = addslashes($_REQUEST["o"]);
-	$link="#";if(isset($_REQUEST["link"])) $link = addslashes($_REQUEST["link"]);
+	$menu_link="#";if(isset($_REQUEST["menu_link"])) $menu_link = addslashes($_REQUEST["menu_link"]);
 	$a="";if(isset($_REQUEST["a"])) $a = addslashes($_REQUEST["a"]);
 	$id=0;
 	if(isset($_REQUEST["id"])) $id = addslashes($_REQUEST["id"]);
@@ -23,12 +23,12 @@
 		header("Location:menuedit.php");die();
 	}
 	if($_POST){
-		$wmenu->title_al=$_POST["title_al"];
-		$wmenu->title_en=$_POST["title_en"];
-		$wmenu->menu_parent=$p;
-		$wmenu->class=$class;
+		$wmenu->menu_title=$_POST["menu_title"];
+		$wmenu->menu_desc=$_POST["menu_desc"];
+		$wmenu->id_parent=$p;
+		$wmenu->menu_class=$menu_class;
 		$wmenu->menu_order=$o;
-		$wmenu->link=$link;
+		$wmenu->menu_link=$menu_link;
 		
 		if($id==0){ //insert
 			$wmenu = $wmenu->Insert();
@@ -58,13 +58,13 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Menuja kryesore</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />
+		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />-->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script>
-		function changelink(id)
+		function changemenu_link(id)
 		{
 			if(id>0)
-				$("#link").val("p.php?id="+id);
+				$("#menu_link").val("p.php?id="+id);
 		}
 		function chooseParent(i){ $("#parent").val(i);}
 		</script>
@@ -74,24 +74,24 @@
 		<div id="main" class="container">
 			<ol class="breadcrumb">
 				<li><a href="./">Home</a></li>
-				<li><a href="menuedit.php"><?php echo ucwords($wmenu->title_al);?></a></li>
+				<li><a href="menuedit.php"><?php echo ucwords($wmenu->menu_title);?></a></li>
 			</ol>
 			<div class="row">
 				<div class="col-md-3">
 					<form role="form" method="post">
 						<div class="form-group">
-							<label for="title_al">Titulli AL</label>
-							<input type="text" class="form-control" id="title_al" name="title_al" placeholder="Titulli AL" value="<?php echo $wmenu->title_al;?>">
+							<label for="menu_title">Title</label>
+							<input type="text" class="form-control" id="menu_title" name="menu_title" placeholder="Title" value="<?php echo $wmenu->menu_title;?>">
 						</div>
 						<div class="form-group">
-							<label for="title_en">Titulli EN</label>
-							<input type="text" class="form-control" id="title_en" name="title_en" placeholder="Titulli EN" value="<?php echo $wmenu->title_en;?>">
+							<label for="menu_desc">Description</label>
+							<input type="text" class="form-control" id="menu_desc" name="menu_desc" placeholder="Description" value="<?php echo $wmenu->menu_desc;?>">
 						</div>
 						<div class="form-group">
-							<label for="link">Link</label>
-							<input type="text" class="form-control" id="link" name="link" placeholder="http://" value="<?php echo $wmenu->link;?>">
-							
-							<select class="form-control" name="posts" id="posts" onchange='changelink(this.value)'>
+							<label for="menu_link">Menu Link</label>
+							<input type="text" class="form-control" id="menu_link" name="menu_link" placeholder="http://" value="<?php echo $wmenu->menu_link;?>">
+							<!--
+							<select class="form-control" name="posts" id="posts" onchange='changemenu_link(this.value)'>
 								<option value='0' ></option>
 								<?php
 									include_once("../cls/cls_web_service.php");
@@ -102,13 +102,14 @@
 									}
 								?>
 							</select>
+							-->
 						</div>
 						<div class="form-group">
-							<label for="class">Class</label>
-							<input type="text" class="form-control" id="class" name="class" placeholder="" value="<?php echo $wmenu->class;?>">
+							<label for="menu_class">Menu Class</label>
+							<input type="text" class="form-control" id="menu_class" name="menu_class" placeholder="" value="<?php echo $wmenu->menu_class;?>">
 						</div>
 						<div class="form-group">
-							<label for="parent">Zgjidh nga menuja djathtas(kliko)</label>
+							<label for="parent">Choose(click) from the right menu </label>
 							<select class="form-control" name="p" id="parent" >
 								<option value='0' >No Parent</option>
 								<?php							
@@ -116,9 +117,9 @@
 									foreach($wmenus as $tr){
 										$selected ="";
 										
-										if($tr->id_menu == $wmenu->menu_parent) 
+										if($tr->id_menu == $wmenu->id_parent) 
 										$selected = ' selected="selected"';
-										echo "<option value='".$tr->id_menu."' ".$selected .">".$tr->title_al."</option>";
+										echo "<option value='".$tr->id_menu."' ".$selected .">".$tr->menu_title."</option>";
 									}
 								?>
 							</select>
@@ -167,11 +168,11 @@
 							<?php
 							function display_menu($id,$j){
 								global $wmenu;
-								global $link;
+								global $menu_link;
 								global $q;
 								
-								$sql="menu_parent =".$id."";
-								if($q) {$sql="(link='".$q."' or title_al like '%".$q."%' or title_en like '%".$q."%' ) ";$q="";}
+								$sql="id_parent =".$id."";
+								if($q) {$sql="(menu_link='".$q."' or menu_title like '%".$q."%' or menu_desc like '%".$q."%' ) ";$q="";}
 								$wmenus = $wmenu->Find($sql." order by menu_order");
 								foreach($wmenus as $menu){
 									$id = $menu->id_menu;
@@ -179,9 +180,9 @@
 								<tr>
 									<td class="col-md-9" onclick='chooseParent(<?php echo $id;?>)'>
 									<label><?php echo $id;?></label>
-									<?php for($i=0;$i<$j;$i++) echo "- ";?><a href="menuedit.php?id=<?php echo $id;?>"><?php if($j==0)echo "<strong>".$menu->title_al."</strong>"; else echo $menu->title_al;?> </a>
+									<?php for($i=0;$i<$j;$i++) echo "- ";?><a href="menuedit.php?id=<?php echo $id;?>"><?php if($j==0)echo "<strong>".$menu->menu_title."</strong>"; else echo $menu->menu_title;?> </a>
 									</td>
-									<td class="col-md-2"><a href="<?php echo get_image_url($menu->link);?>" target="_blank"><?php echo $menu->link;?></a></td>
+									<td class="col-md-2"><a href="<?php echo get_image_url($menu->menu_link);?>" target="_blank"><?php echo $menu->menu_link;?></a></td>
 									<td class="col-md-1"><a href="menuedit.php?a=delete&id=<?php echo $id;?>" type="button" class="btn btn-danger btn-xs" title="Delete"><span class="glyphicon glyphicon-trash"></span></a></td>
 								</tr>
 								<?php
@@ -204,6 +205,5 @@
 			</div>
 			
 			<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-			<script src="js/holder.js"></script>
 		</body>
 	<html>				
