@@ -147,8 +147,12 @@
 		
 		<link rel="shortcut icon" href="favicon.ico" />
 		<title>Nensherbimet</title>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/holder.js"></script>
+		<script src="js/typeahead.min.js"></script>
 		<script>
 			function getdesc(str)
 			{
@@ -248,6 +252,56 @@
 			border-radius: 15px;
 			}
 		</style>
+<style type="text/css">
+.bs-example{
+	font-family: sans-serif;
+	position: relative;
+	margin: 100px;
+}
+.typeahead, .tt-query, .tt-hint {
+	border: 2px solid #CCCCCC;
+	border-radius: 8px;
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+	outline: medium none;
+	padding: 8px 12px;
+	width: 396px;
+}
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	color: #999999;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 422px;
+}
+.tt-suggestion {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+</style>
 	</head>
 	<body>
 		
@@ -316,6 +370,20 @@
 											$j=1;
 											foreach($items as $sub_cat)
 											{
+											    ?>
+													<script type="text/javascript">
+													
+														$(document).ready(function() {
+																  $('#<?php echo 'name'.$sub_cat->id_category;?>').typeahead({
+																	   name : '<?php echo "name".$sub_cat->id_category;?>',
+																	   remote: {
+																		   url : 'service_search.php?id_category=<?php echo $sub_cat->id_category;?>&q=%QUERY'
+																		  }
+															});
+													});
+													</script>
+						
+												<?php
 												$shtesadiv="";
 												$shtesamodal="";
 												$duket='';
@@ -459,8 +527,8 @@
 												<input type="hidden" name="id" value="'.$id.'"/>
 												<input type="hidden" name="kategoria" value="'.$sub_cat->id_category.'"/>
 												<input type="hidden" name="tip" value="shtim"/>
-												<p><input type="text" class="form-control" name="name'.$sub_cat->id_category.'" id="name'.$sub_cat->id_category.'"
-												value="" placeholder="Emri i produktit, psh Dhome Teke, Tave Dheu"/>
+												<p><input type="text" class="typeahead tt-query" autocomplete="off" name="name'.$sub_cat->id_category.'" id="name'.$sub_cat->id_category.'"
+												 spellcheck="false" value="" placeholder="Emri i produktit, psh Dhome Teke, Tave Dheu"/>
 												</p><br/>
 												<p><input type="text" class="form-control" name="desc'.$sub_cat->id_category.'" id="desc'.$sub_cat->id_category.'"
 												value="" placeholder="Pershkrimi i gjate i produktit"/>
@@ -561,8 +629,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- <script type="text/javascript" src="./js/bootstrap.js"></script> -->
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="js/checkboxes.js?v=2" type="text/javascript"></script>
+		
 	</body>
 <html>
