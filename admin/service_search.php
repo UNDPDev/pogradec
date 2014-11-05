@@ -1,8 +1,14 @@
 <?php
+<<<<<<< HEAD
 	require_once("../start.php");
 	require_once("../config.php");
 	require_once("db.php");
 
+=======
+require_once("start.php");
+require_once("config.php");
+require_once("db.php");
+>>>>>>> origin/master
 require_once("../cls/cls_web_service.php");
 
 $service = new web_service();
