@@ -81,9 +81,6 @@
 		<link rel="stylesheet" href="css/wizard.css" type="text/css"/>
 		<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" type="text/css" />-->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<!--http://maps.google.com/maps/api/js?sensor=false-->
-		<!--https://maps.googleapis.com/maps/api/js?v=3.exp-->
 		<style>
 			div#gmap { width: 100%; height: 300px; }
 		</style>
@@ -103,7 +100,7 @@
 						<p>Extra Info</p>
 					</div>
 					<div class="stepwizard-step">
-						<a class="btn btn-primary btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-subs.php?id=<?php echo $id;?>'>3</a>
+						<a class="btn btn-default btn-circle" <?php if($id==0) echo 'disabled="disabled"';?> href='service-subs.php?id=<?php echo $id;?>'>3</a>
 						<p>Services</p>
 					</div> 
 					<div class="stepwizard-step">

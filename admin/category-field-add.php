@@ -32,7 +32,7 @@
 		$cat_field->field_type=$_POST["field_type"];
 		$cat_field->Insert();
 		/**********/
-		header("Location:category-fields.php?id=".$_POST["id_category"]);die();
+		header("Location:category-fields.php?id=".$_POST["id"]);die();
 	}
 	
 ?>
@@ -158,6 +158,5 @@
 		</div>
 		
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="js/holder.js"></script>
 	</body>
 <html>

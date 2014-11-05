@@ -135,9 +135,6 @@
 													on <?php echo $service->dt_created;?>
 												</div>
 											</div>
-											<div class="comment-text">
-												<?php echo $service->service_desc;?>
-											</div>
 											<div class="action">
 												<a href="service-edit.php?id=<?php echo $id;?>" type="button" class="btn btn-primary btn-xs" title="Edit">
 													<span class="glyphicon glyphicon-pencil"></span>
