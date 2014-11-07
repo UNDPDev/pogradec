@@ -1,4 +1,4 @@
 Pogradec
 ========
 
-Projekti per turizmin ne Pogragec
+Projekti per turizmin ne Pogradec
